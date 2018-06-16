@@ -59,6 +59,18 @@ ModelImporter:
     100102: ship_wall_linear_020
     100104: ship_wall_linear_021
     100106: ship_wall_linear_022
+    100108: Add2
+    100110: Add3
+    100112: Add4
+    100114: Base2
+    100116: Base3
+    100118: Base4
+    100120: ship_wall_column3
+    100122: ship_wall_linear_023
+    100124: Add5
+    100126: Base5
+    100128: ship_wall_linear_024
+    100130: ship_wall_linear_025
     400000: ship_wall_front
     400002: ship_wall_front1
     400004: ship_wall_front2
@@ -113,6 +125,18 @@ ModelImporter:
     400102: ship_wall_linear_020
     400104: ship_wall_linear_021
     400106: ship_wall_linear_022
+    400108: Add2
+    400110: Add3
+    400112: Add4
+    400114: Base2
+    400116: Base3
+    400118: Base4
+    400120: ship_wall_column3
+    400122: ship_wall_linear_023
+    400124: Add5
+    400126: Base5
+    400128: ship_wall_linear_024
+    400130: ship_wall_linear_025
     2100000: Atlas3
     2100002: Atlas7
     2100004: Atlas20
@@ -170,6 +194,18 @@ ModelImporter:
     2300098: ship_wall_linear_019
     2300100: ship_wall_linear_020
     2300102: ship_wall_linear_021
+    2300104: Add2
+    2300106: Add3
+    2300108: Add4
+    2300110: Base2
+    2300112: Base3
+    2300114: Base4
+    2300116: ship_wall_column3
+    2300118: ship_wall_linear_023
+    2300120: Add5
+    2300122: Base5
+    2300124: ship_wall_linear_024
+    2300126: ship_wall_linear_025
     3300000: ship_wall_front
     3300002: ship_wall_front1
     3300004: ship_wall_front2
@@ -222,6 +258,18 @@ ModelImporter:
     3300098: ship_wall_linear_019
     3300100: ship_wall_linear_020
     3300102: ship_wall_linear_021
+    3300104: Add2
+    3300106: Add3
+    3300108: Add4
+    3300110: Base2
+    3300112: Base3
+    3300114: Base4
+    3300116: ship_wall_column3
+    3300118: ship_wall_linear_023
+    3300120: Add5
+    3300122: Base5
+    3300124: ship_wall_linear_024
+    3300126: ship_wall_linear_025
     4300000: ship_wall_round19
     4300002: ship_wall_round18
     4300004: ship_wall_round17
@@ -274,6 +322,18 @@ ModelImporter:
     4300098: Add
     4300100: Base1
     4300102: Add1
+    4300104: Base2
+    4300106: Add2
+    4300108: Base3
+    4300110: Add3
+    4300112: Base4
+    4300114: Add4
+    4300116: ship_wall_linear_023
+    4300118: ship_wall_column3
+    4300120: Base5
+    4300122: Add5
+    4300124: ship_wall_linear_024
+    4300126: ship_wall_linear_025
   externalObjects: {}
   materials:
     importMaterials: 1
