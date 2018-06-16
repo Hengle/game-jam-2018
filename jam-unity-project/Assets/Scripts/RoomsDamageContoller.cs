@@ -1,10 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using EZCameraShake;
 using Rooms;
 using UnityEngine;
 
 public class RoomsDamageContoller : MonoBehaviour
 {
+  public float Magnitude = 2f;
+  public float Roughness = 10f;
+  public float FadeOutTime = 5f;
+
   private List<BaseRoom> _rooms = new List<BaseRoom>();
  
   private void Start()
@@ -29,6 +34,8 @@ public class RoomsDamageContoller : MonoBehaviour
 
   private void InstanceOnSpaceHit()
   {
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
+    
     if (GameGod.Instance.ShieldIsActivated)
     {
       GameGod.Instance.DeactivateShield();
