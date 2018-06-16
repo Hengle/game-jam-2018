@@ -32,7 +32,7 @@ public class Done_PlayerController : MonoBehaviour
   {
     _instance = this;
   }
-  
+
   public void Shoot()
   {
     if (Time.time > nextFire)
@@ -60,10 +60,24 @@ public class Done_PlayerController : MonoBehaviour
 //		);
 
     var rigidBody = GetComponent<Rigidbody>();
-    var rotation = Quaternion.Euler(0.0f, 0.0f, 0);//GetComponent<Rigidbody>().velocity.x * -tilt);
+    var rotation = Quaternion.Euler(0.0f, 0.0f, 0); //GetComponent<Rigidbody>().velocity.x * -tilt);
     rotation.x = rigidBody.rotation.x;
     rotation.y = rigidBody.rotation.y;
 //    rigidBody.rotation = rotation;
+
+    var pos = transform.localPosition;
+
+
+    if (pos.x > boundary.xMax)
+    {
+      pos.x = boundary.xMin + 0.2f;
+    }
+    else if (pos.x < boundary.xMin)
+    {
+      pos.x = boundary.xMax - 0.2f;
+    }
+
+    transform.localPosition = pos;
   }
 
   public void MoveHorizontal(float directionAndPower)
@@ -79,5 +93,4 @@ public class Done_PlayerController : MonoBehaviour
     Vector3 movement = new Vector3(rigid.velocity.x, directionAndPower, 0);
     rigid.velocity = movement * speed;
   }
-
 }

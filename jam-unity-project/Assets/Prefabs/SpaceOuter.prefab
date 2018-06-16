@@ -577,8 +577,8 @@ MonoBehaviour:
   speed: 3
   tilt: 5
   boundary:
-    xMin: 0
-    xMax: 0
+    xMin: -10
+    xMax: 10
     zMin: 0
     zMax: 0
   shot: {fileID: 100000, guid: f4ec271e525e14ca9927a07e6a2e153d, type: 2}
