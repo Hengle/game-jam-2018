@@ -9,9 +9,10 @@ public class Spawner : MonoBehaviour
 
   private void Awake()
   {
-    _stab.SetActive(false);
-    
-    if(_instance == null)
+    if (_stab != null)
+      _stab.SetActive(false);
+
+    if (_instance == null)
       throw new NullReferenceException("[Spawner] You need to set instance to spawn");
 
     var obj = Instantiate(_instance, transform);
