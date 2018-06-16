@@ -13,6 +13,17 @@ ModelImporter:
     100010: ship_energy_generator
     100012: ship_energy_wires
     100014: ship_energy_wires1
+    100016: ship_energy_battery2
+    100018: ship_energy_board
+    100020: ship_energy_energyBoard
+    100022: ship_energy_energyBoardBottom
+    100024: ship_energy_energyBoardHandler
+    100026: ship_energy_energyBoardHandler1
+    100028: ship_energy_energyBoardHandler2
+    100030: ship_energy_energyBoardHandler3
+    100032: ship_energy_energyBoardHandler4
+    100034: ship_energy_energyBoardSider
+    100036: ship_energy_energyBoardSider1
     400000: //RootNode
     400002: ship_energy_batteryShelf
     400004: ship_energy_batteryShelf_02
@@ -21,10 +32,24 @@ ModelImporter:
     400010: ship_energy_generator
     400012: ship_energy_wires
     400014: ship_energy_wires1
+    400016: ship_energy_battery2
+    400018: ship_energy_board
+    400020: ship_energy_energyBoard
+    400022: ship_energy_energyBoardBottom
+    400024: ship_energy_energyBoardHandler
+    400026: ship_energy_energyBoardHandler1
+    400028: ship_energy_energyBoardHandler2
+    400030: ship_energy_energyBoardHandler3
+    400032: ship_energy_energyBoardHandler4
+    400034: ship_energy_energyBoardSider
+    400036: ship_energy_energyBoardSider1
     2100000: Atlas1
     2100002: Atlas2
     2100004: lambert1
     2100006: Rury1
+    2100008: Atlas9
+    2100010: Atlas16
+    2100012: Atlas17
     2300000: ship_energy_batteryShelf
     2300002: ship_energy_batteryShelf_02
     2300004: ship_energy_charge
@@ -32,6 +57,17 @@ ModelImporter:
     2300008: ship_energy_generator
     2300010: ship_energy_wires
     2300012: ship_energy_wires1
+    2300014: ship_energy_battery2
+    2300016: ship_energy_board
+    2300018: ship_energy_energyBoard
+    2300020: ship_energy_energyBoardBottom
+    2300022: ship_energy_energyBoardHandler
+    2300024: ship_energy_energyBoardHandler1
+    2300026: ship_energy_energyBoardHandler2
+    2300028: ship_energy_energyBoardHandler3
+    2300030: ship_energy_energyBoardHandler4
+    2300032: ship_energy_energyBoardSider
+    2300034: ship_energy_energyBoardSider1
     3300000: ship_energy_batteryShelf
     3300002: ship_energy_batteryShelf_02
     3300004: ship_energy_charge
@@ -39,6 +75,17 @@ ModelImporter:
     3300008: ship_energy_generator
     3300010: ship_energy_wires
     3300012: ship_energy_wires1
+    3300014: ship_energy_battery2
+    3300016: ship_energy_board
+    3300018: ship_energy_energyBoard
+    3300020: ship_energy_energyBoardBottom
+    3300022: ship_energy_energyBoardHandler
+    3300024: ship_energy_energyBoardHandler1
+    3300026: ship_energy_energyBoardHandler2
+    3300028: ship_energy_energyBoardHandler3
+    3300030: ship_energy_energyBoardHandler4
+    3300032: ship_energy_energyBoardSider
+    3300034: ship_energy_energyBoardSider1
     4300000: ship_energy_generator
     4300002: ship_energy_batteryShelf
     4300004: ship_energy_batteryShelf_02
@@ -46,6 +93,17 @@ ModelImporter:
     4300008: ship_energy_charge_02
     4300010: ship_energy_wires
     4300012: ship_energy_wires1
+    4300014: ship_energy_battery2
+    4300016: ship_energy_board
+    4300018: ship_energy_energyBoardBottom
+    4300020: ship_energy_energyBoard
+    4300022: ship_energy_energyBoardHandler
+    4300024: ship_energy_energyBoardHandler1
+    4300026: ship_energy_energyBoardHandler2
+    4300028: ship_energy_energyBoardHandler3
+    4300030: ship_energy_energyBoardHandler4
+    4300032: ship_energy_energyBoardSider
+    4300034: ship_energy_energyBoardSider1
   externalObjects: {}
   materials:
     importMaterials: 1
