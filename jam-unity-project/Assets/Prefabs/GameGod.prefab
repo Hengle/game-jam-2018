@@ -52,6 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3724c94f29ace614190620d809201a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Magnitude: 2
+  Roughness: 10
+  FadeOutTime: 5
 --- !u!114 &114710625852178448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,7 +69,7 @@ MonoBehaviour:
   NavigationEnergyConsumption: 2
   NavigationEnergyTimeOut: 1
   EnergyIncrement: 10
-  Energy: 100
+  Energy: 300
   MaximumEnergy: 100
   BulletsIncrement: 10
   CurrentBullets: 10
