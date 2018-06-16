@@ -14,7 +14,7 @@ public class Done_PlayerController : MonoBehaviour
 
   public static Done_PlayerController Instance
   {
-    get { return _instance ?? (_instance = GameObject.Find("Done_Player").GetComponent<Done_PlayerController>()); }
+    get { return _instance ?? (_instance = GameObject.Find("SPACE_PLAYER").GetComponent<Done_PlayerController>()); }
   }
 
   public float speed;
@@ -71,7 +71,7 @@ public class Done_PlayerController : MonoBehaviour
   public void MoveVertical(float directionAndPower)
   {
     var rigid = GetComponent<Rigidbody>();
-    Vector3 movement = new Vector3(rigid.velocity.x, 0.0f, directionAndPower);
+    Vector3 movement = new Vector3(rigid.velocity.z, 0.0f, directionAndPower);
     rigid.velocity = movement * speed;
   }
 

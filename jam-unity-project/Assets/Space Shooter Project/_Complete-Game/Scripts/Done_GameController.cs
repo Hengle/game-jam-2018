@@ -13,8 +13,8 @@ public class Done_GameController : MonoBehaviour
     public float waveWait;
 
     public Text scoreText;
-    public Text restartText;
-    public Text gameOverText;
+    //public Text restartText;
+    //public Text gameOverText;
 
     private bool gameOver;
     private bool restart;
@@ -50,16 +50,18 @@ public class Done_GameController : MonoBehaviour
             for (int i = 0; i < hazardCount; i++)
             {
                 GameObject hazard = hazards[Random.Range(0, hazards.Length)];
-                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-                Quaternion spawnRotation = Quaternion.identity;
-                Instantiate(hazard, spawnPosition, spawnRotation);
+                Vector3 spawnPosition = transform.position + new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                //Quaternion spawnRotation = Quaternion.identity;
+                var asd = Instantiate(hazard);//, spawnRotation);
+                asd.transform.position = spawnPosition;
+                asd.transform.rotation = hazard.transform.rotation;
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
 
             if (gameOver)
             {
-                restartText.text = "Press 'R' for Restart";
+                //restartText.text = "Press 'R' for Restart";
                 restart = true;
                 break;
             }
@@ -79,7 +81,7 @@ public class Done_GameController : MonoBehaviour
 
     public void GameOver()
     {
-        gameOverText.text = "Game Over!";
+       // gameOverText.text = "Game Over!";
         gameOver = true;
     }
 }
