@@ -5,7 +5,9 @@ licenseType: Pro
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
+  - _MainTex: {fileID: 2800000, guid: 5798ded558355430c8a9b13ee12a847c, type: 3}
   - _TextureSample0: {fileID: 2800000, guid: 5798ded558355430c8a9b13ee12a847c, type: 3}
+  - _Mask: {fileID: 2800000, guid: 5798ded558355430c8a9b13ee12a847c, type: 3}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

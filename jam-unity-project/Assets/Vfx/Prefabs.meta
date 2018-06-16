@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< 9db78eac83ddc98dbf63e3e983e078e32ab65f3f
 guid: 72a3350b5adfde14496b8b531b6eb8d8
 folderAsset: yes
 timeCreated: 1529149775
+=======
+guid: c840895603a00ae4eadb8e6d97c65b40
+folderAsset: yes
+timeCreated: 1529135881
+>>>>>>> Art Shield
 licenseType: Pro
 DefaultImporter:
   externalObjects: {}
