@@ -4,41 +4,54 @@ using UnityEngine.UI;
 
 public class SelectedMenuItem : MonoBehaviour
 {
-  public Color DefaultColor;
+    public Color DefaultColor;
 
-  public Color BlinkColor;
-  public float BlinkSpeed;
+    public Color BlinkColor;
+    public float BlinkSpeed;
+    public float NormalSpeed;
 
-  private Text _text;
+    private Text _text;
 
-  // Use this for initialization
-  void Start()
-  {
-    _text = GetComponent<Text>();
-    Select();
-  }
+    private float _speed;
 
-  private void Select()
-  {
-    StartCoroutine("ChangeColor");
-  }
+    public bool IsBlinking;
 
-  private void Deselect()
-  {
-    StopCoroutine("ChangeColor");
-  }
-
-  private IEnumerator ChangeColor()
-  {
-    while (true)
+    // Use this for initialization
+    private void Start()
     {
-      //yield return new WaitForSeconds(BlinkSpeed);
-      _text.color = BlinkColor;
-      yield return new WaitForSeconds(BlinkSpeed);
-      _text.color = DefaultColor;
-      yield return new WaitForSeconds(BlinkSpeed);
+        _text = GetComponent<Text>();
+        SelectNormal();
     }
-  }
 
+    public void Select()
+    {
+        IsBlinking = true;
+        _speed = BlinkSpeed;
+        StartCoroutine("ChangeColor");
+    }
 
+    public void SelectNormal()
+    {
+        IsBlinking = true;
+        _speed = NormalSpeed;
+        StartCoroutine("ChangeColor");
+    }
+
+    public void Deselect()
+    {
+        IsBlinking = false;
+        StopCoroutine("ChangeColor");
+        _text.color = DefaultColor;
+    }
+
+    private IEnumerator ChangeColor()
+    {
+        while (true)
+        {
+            _text.color = BlinkColor;
+            yield return new WaitForSeconds(_speed);
+            _text.color = DefaultColor;
+            yield return new WaitForSeconds(_speed);
+        }
+    }
 }

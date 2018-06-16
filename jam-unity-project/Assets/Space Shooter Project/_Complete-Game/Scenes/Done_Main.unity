@@ -145,8 +145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.0049744, y: -32.2}
-  m_SizeDelta: {x: -639.2, y: 8.1}
+  m_AnchoredPosition: {x: -3.0999756, y: -32.2}
+  m_SizeDelta: {x: -744.37, y: 8.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23661627
 MonoBehaviour:
@@ -333,12 +333,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1c10051538e484e849e45b324b9b334b, type: 2}
-    m_FontSize: 15
+    m_Font: {fileID: 12800000, guid: 29821db8324231f4481e730bf6288b9c, type: 2}
+    m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -363,9 +363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a465eb3ecbc6af14290d26c0de946317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultColor: {r: 1, g: 1, b: 1, a: 0}
-  BlinkColor: {r: 0.6965517, g: 1, b: 0, a: 0}
-  BlinkSpeed: 3
+  DefaultColor: {r: 1, g: 1, b: 1, a: 1}
+  BlinkColor: {r: 0.6965517, g: 1, b: 0, a: 1}
+  BlinkSpeed: 0.2
 --- !u!1 &547953557
 GameObject:
   m_ObjectHideFlags: 0
