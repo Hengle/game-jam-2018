@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GamepadInput;
+using Rooms;
 using UnityEngine;
 
 public enum PlayerIndex
@@ -106,6 +107,33 @@ public class Player : MonoBehaviour
 	{
 		MoveHorizontal = Input.GetAxis(_controlls[_playerIndex][Controll.Horizontal]);
 		MoveVertical = Input.GetAxis(_controlls[_playerIndex][Controll.Vertical]);
+
+		var action = Input.GetAxis(_controlls[_playerIndex][Controll.Activate]) > 0;
+		var cansel = Input.GetAxis(_controlls[_playerIndex][Controll.Cancel]) > 0;
+		
+		if (GamePad.GetButtonDown(GamePad.Button.B, _gamePadMap[_playerIndex]))
+		{
+			Debug.Log("Activate_P" + ((int)_playerIndex + 1));
+			action = true;
+		}
+		
+		if (GamePad.GetButtonDown(GamePad.Button.X, _gamePadMap[_playerIndex]))
+		{
+			cansel = true;
+			Debug.Log("Cansel_P" + ((int)_playerIndex + 1));
+		}
+		
+		if (action && _currentRoom != null && Time.time > _nextUse)
+		{
+			_nextUse = Time.time + UseRate;
+			_currentRoom.Use(this);
+		}
+
+		if (cansel)
+		{
+			if (_currentRoom != null)
+				_currentRoom.Cansel(this);
+		}
 		
 		if(!CanControll)
 			return;
@@ -115,30 +143,6 @@ public class Player : MonoBehaviour
 		var rigid = GetComponent<Rigidbody>(); 
 		
 		rigid.velocity = movement * _speed;
-
-		var action = Input.GetAxis(_controlls[_playerIndex][Controll.Activate]) > 0;
-		var cansel = Input.GetAxis(_controlls[_playerIndex][Controll.Cancel]) > 0;
-		
-		if (GamePad.GetButtonDown(GamePad.Button.B, _gamePadMap[_playerIndex]))
-		{
-			if (_currentRoom != null)
-				_currentRoom.Use(this);
-			
-			Debug.Log("Activate_P" + ((int)_playerIndex + 1));
-			action = true;
-		}
-		
-		if (GamePad.GetButtonDown(GamePad.Button.X, _gamePadMap[_playerIndex]))
-		{
-			Debug.Log("Cansel_P" + ((int)_playerIndex + 1));
-			cansel = true;
-		}
-		
-		if (action && _currentRoom != null && Time.time > _nextUse)
-		{
-			_nextUse = Time.time + UseRate;
-			_currentRoom.Use(this);
-		}
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -153,5 +157,11 @@ public class Player : MonoBehaviour
 	
 	private void OnTriggerExit(Collider other)
 	{
+		var room = other.GetComponent<BaseRoom>();
+		
+		if(room == null)
+			return;
+
+		_currentRoom = null;
 	}
 }

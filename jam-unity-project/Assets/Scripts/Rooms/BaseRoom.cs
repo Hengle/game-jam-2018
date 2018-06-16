@@ -1,16 +1,25 @@
 ﻿using UnityEngine;
 
-public abstract class BaseRoom : MonoBehaviour
+namespace Rooms
 {
-  public int Health = 1;
-
-  public void Use(Player player)
+  public abstract class BaseRoom : MonoBehaviour
   {
-    if(Health == 0)
-      return;
+    public int Health = 1;
 
-    UseImpl(player);
+    public void Use(Player player)
+    {
+      if(Health == 0)
+        return;
+
+      UseImpl(player);
+    }
+
+    public void Cansel(Player player)
+    {
+      CancelImpl(player);
+    }
+
+    protected abstract void CancelImpl(Player player);
+    protected abstract void UseImpl(Player player);
   }
-
-  protected abstract void UseImpl(Player player);
 }

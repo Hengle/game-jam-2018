@@ -1,8 +1,17 @@
-﻿using UnityEngine;
+﻿using Rooms;
 
 public class NavigationRoom : BaseRoom
 {
   public static Player CurrentPlayer;
+
+  protected override void CancelImpl(Player player)
+  {
+    if (CurrentPlayer == null)
+      return;
+
+    CurrentPlayer.CanControll = true;
+    CurrentPlayer = null;
+  }
 
   protected override void UseImpl(Player player)
   {
