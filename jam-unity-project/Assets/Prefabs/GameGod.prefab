@@ -63,8 +63,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ed4b6011b5cd044a08d7ab55bd98fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NavigationEnergyConsumption: 20
+  NavigationEnergyTimeOut: 1
   EnergyIncrement: 10
-  Energy: 0
+  Energy: 100
   MaximumEnergy: 100
   BulletsIncrement: 10
   CurrentBullets: 10

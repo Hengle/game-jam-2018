@@ -1,4 +1,7 @@
-﻿using Rooms;
+﻿using System;
+using System.Collections;
+using Rooms;
+using UnityEngine;
 
 public class NavigationRoom : BaseRoom
 {
@@ -19,14 +22,19 @@ public class NavigationRoom : BaseRoom
     {
       CurrentPlayer = player;
       CurrentPlayer.CanControll = false;
+      StartCoroutine(EnergyConsumption());
     }
   }
   
   private void FixedUpdate()
   {
-    if(CurrentPlayer == null)
+    if (NeedToStop())
+    {
+      StopCoroutine(EnergyConsumption());
+      CurrentPlayer.Cancel();
       return;
-    
+    }
+
     var moveHorizontal = CurrentPlayer.MoveHorizontal;
     var moveVertical = CurrentPlayer.MoveVertical;
 
@@ -34,5 +42,24 @@ public class NavigationRoom : BaseRoom
     Done_PlayerController.Instance.MoveVertical(moveVertical);
 
     //TODO link navigation room to ship
+  }
+
+  private IEnumerator EnergyConsumption()
+  {
+    while (true)
+    {
+      if (NeedToStop())
+        break;
+      
+      GameGod.Instance.Energy -= GameGod.Instance.NavigationEnergyConsumption;
+      yield return new WaitForSeconds(GameGod.Instance.NavigationEnergyTimeOut); 
+    }
+  }
+
+  private bool NeedToStop()
+  {
+    var lowEnergy = GameGod.Instance.Energy < .001f;
+    
+    return CurrentPlayer == null || lowEnergy;
   }
 }

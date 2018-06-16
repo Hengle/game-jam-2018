@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using UnityEngine;
 
 public class GameGod : MonoBehaviour {
@@ -12,6 +12,9 @@ public class GameGod : MonoBehaviour {
 	
 	public event Action Updated = delegate {  };
 
+	public float NavigationEnergyConsumption = 3;
+	public float NavigationEnergyTimeOut = 1;
+	
 	public float EnergyIncrement;
 	public float Energy;
 	public float MaximumEnergy;
