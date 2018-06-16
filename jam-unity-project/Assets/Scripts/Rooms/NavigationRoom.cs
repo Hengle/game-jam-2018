@@ -1,4 +1,6 @@
-﻿public class NavigationRoom : BaseRoom
+﻿using UnityEngine;
+
+public class NavigationRoom : BaseRoom
 {
   public static Player CurrentPlayer;
 
@@ -18,7 +20,10 @@
     
     var moveHorizontal = CurrentPlayer.MoveHorizontal;
     var moveVertical = CurrentPlayer.MoveVertical;
-    
+
+    Done_PlayerController.Instance.MoveHorizontal(moveHorizontal);
+    Done_PlayerController.Instance.MoveVertical(moveVertical);
+
     //TODO link navigation room to ship
   }
 }

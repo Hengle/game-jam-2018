@@ -85,9 +85,19 @@ public class Player : MonoBehaviour
 
 		var action = false;
 		
+		if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.One))
+		{
+			if (_currentRoom != null)
+				_currentRoom.Use(this);
+			
+			Debug.Log("Activate_P1");
+			action = true;
+		}
+		
 		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.One))
 		{
-			Debug.Log("Fire_P1");
+			
+			Debug.Log("Cansel_P1");
 			action = true;
 		}
 		
@@ -112,19 +122,15 @@ public class Player : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag("Room"))
-		{
-			_currentRoom = other.GetComponent<BaseRoom>();
-			Debug.LogError("Get room " + _currentRoom.name);
-		}
-	}
+		var room = other.GetComponent<BaseRoom>();
+		
+		if(room == null)
+			return;
 
+		_currentRoom = room;
+	}
+	
 	private void OnTriggerExit(Collider other)
 	{
-		if (other.CompareTag("Room"))
-		{
-			_currentRoom = null;
-			Debug.Log("Free room ");
-		}
 	}
 }

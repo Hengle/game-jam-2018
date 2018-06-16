@@ -2,7 +2,7 @@
 
 public abstract class BaseRoom : MonoBehaviour
 {
-  public int Health;
+  public int Health = 1;
 
   public void Use(Player player)
   {
