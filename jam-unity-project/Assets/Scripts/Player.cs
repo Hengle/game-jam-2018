@@ -111,26 +111,6 @@ public class Player : MonoBehaviour
 			if (_currentRoom != null)
 				_currentRoom.Use(this);
 			
-			Debug.Log("Activate_P1");
-			action = true;
-		}
-		
-		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.One))
-		{
-			
-			Debug.Log("Cansel_P1");
-			action = true;
-		}
-		
-		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.Two))
-		{
-			Debug.Log("Fire_P2");
-			action = true;
-		}
-		
-		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.Two))
-		{
-			Debug.Log("Fire_P3");
 			action = true;
 		}
 		
