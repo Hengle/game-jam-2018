@@ -190,14 +190,14 @@ public class Player : MonoBehaviour
 		
 		if (GamePad.GetButtonDown(GamePad.Button.B, _gamePadMap[_playerIndex]))
 		{
-			Debug.Log("Activate_P" + ((int)_playerIndex + 1));
+//			Debug.Log("Activate_P" + ((int)_playerIndex + 1));
 			action = true;
 		}
 		
 		if (GamePad.GetButtonDown(GamePad.Button.X, _gamePadMap[_playerIndex]))
 		{
 			needCansel = true;
-			Debug.Log("Cansel_P" + ((int)_playerIndex + 1));
+//			Debug.Log("Cansel_P" + ((int)_playerIndex + 1));
 		}
 		
 		if (action && _currentRoom != null && Time.time > _nextUse)

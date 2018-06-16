@@ -39,7 +39,7 @@ public class RoomsDamageContoller : MonoBehaviour
 
       if (randomRoom != null)
       {
-        Debug.Log(randomRoom.GetType().FullName);
+//        Debug.Log(randomRoom.GetType().FullName);
         randomRoom.SufferBitch();
       }
     }

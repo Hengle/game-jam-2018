@@ -27,7 +27,7 @@ namespace Enemies
         yield return new WaitForSeconds(2);
       }
 
-      yield return null;
+//      yield return null;
     }
 
     public void Update()
