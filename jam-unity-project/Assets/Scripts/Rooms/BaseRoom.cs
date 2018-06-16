@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ControllHelpers;
+using UnityEngine;
 
 namespace Rooms
 {
@@ -8,6 +9,12 @@ namespace Rooms
     public int MaxHealth = 10;
 
     [SerializeField] private GameObject _damaged;
+    [SerializeField] private ControllHelperKey[] _keys;
+
+    public ControllHelperKey[] HelperKeys
+    {
+      get { return _keys; }
+    }
 
     public void Use(Player player)
     {

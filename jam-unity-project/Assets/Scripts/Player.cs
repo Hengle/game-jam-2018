@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GamepadInput;
 using Rooms;
 using UnityEngine;
@@ -20,76 +21,12 @@ public enum Controll
 
 public class Player : MonoBehaviour
 {
-	private Dictionary<PlayerIndex, Dictionary<Controll, string>> _controlls =
-		new Dictionary<PlayerIndex, Dictionary<Controll, string>>
-		{
-			{
-				PlayerIndex.One, new Dictionary<Controll, string>
-				{
-					{
-						Controll.Horizontal, "Horizontal_P1"
-					},
-					{
-						Controll.Vertical, "Vertical_P1"
-					},
-					{
-						Controll.Activate, "Activate_P1"
-					},
-					{
-						Controll.Cancel, "Cancel_P1"
-					}
-				}
-			},
-			{
-				PlayerIndex.Two,
-				new Dictionary<Controll, string>
-				{
-					{
-						Controll.Horizontal, "Horizontal_P2"
-					},
-					{
-						Controll.Vertical, "Vertical_P2"
-					},
-					{
-						Controll.Activate, "Activate_P2"
-					},
-					{
-						Controll.Cancel, "Cancel_P2"
-					}
-				}
-			},
-			{
-				PlayerIndex.Three,
-				new Dictionary<Controll, string>
-				{
-					{
-						Controll.Horizontal, "Horizontal_P3"
-					},
-					{
-						Controll.Vertical, "Vertical_P3"
-					},
-					{
-						Controll.Activate, "Activate_P3"
-					},
-					{
-						Controll.Cancel, "Cancel_P3"
-					}
-				}
-			}
-		};
-	
-	private Dictionary<PlayerIndex, GamePad.Index> _gamePadMap = new Dictionary<PlayerIndex, GamePad.Index>
+	public Action<BaseRoom> OnRoomChange = r => { };
+
+	public BaseRoom CurrentRoom
 	{
-		{
-			PlayerIndex.One, GamePad.Index.One
-		},
-		{
-			PlayerIndex.Two, GamePad.Index.Two
-		},
-		{
-			PlayerIndex.Three, GamePad.Index.Three
-		},
-	};
+		get { return _currentRoom; }
+	}
 
 	public bool CanControll = true;
 
@@ -229,6 +166,8 @@ public class Player : MonoBehaviour
 			return;
 
 		_currentRoom = room;
+
+		OnRoomChange(_currentRoom);
 	}
 	
 	private void OnTriggerExit(Collider other)
@@ -239,5 +178,78 @@ public class Player : MonoBehaviour
 			return;
 
 		_currentRoom = null;
+
+		OnRoomChange(_currentRoom);
 	}
+	
+	private Dictionary<PlayerIndex, Dictionary<Controll, string>> _controlls =
+		new Dictionary<PlayerIndex, Dictionary<Controll, string>>
+		{
+			{
+				PlayerIndex.One, new Dictionary<Controll, string>
+				{
+					{
+						Controll.Horizontal, "Horizontal_P1"
+					},
+					{
+						Controll.Vertical, "Vertical_P1"
+					},
+					{
+						Controll.Activate, "Activate_P1"
+					},
+					{
+						Controll.Cancel, "Cancel_P1"
+					}
+				}
+			},
+			{
+				PlayerIndex.Two,
+				new Dictionary<Controll, string>
+				{
+					{
+						Controll.Horizontal, "Horizontal_P2"
+					},
+					{
+						Controll.Vertical, "Vertical_P2"
+					},
+					{
+						Controll.Activate, "Activate_P2"
+					},
+					{
+						Controll.Cancel, "Cancel_P2"
+					}
+				}
+			},
+			{
+				PlayerIndex.Three,
+				new Dictionary<Controll, string>
+				{
+					{
+						Controll.Horizontal, "Horizontal_P3"
+					},
+					{
+						Controll.Vertical, "Vertical_P3"
+					},
+					{
+						Controll.Activate, "Activate_P3"
+					},
+					{
+						Controll.Cancel, "Cancel_P3"
+					}
+				}
+			}
+		};
+	
+	private Dictionary<PlayerIndex, GamePad.Index> _gamePadMap = new Dictionary<PlayerIndex, GamePad.Index>
+	{
+		{
+			PlayerIndex.One, GamePad.Index.One
+		},
+		{
+			PlayerIndex.Two, GamePad.Index.Two
+		},
+		{
+			PlayerIndex.Three, GamePad.Index.Three
+		},
+	};
 }
