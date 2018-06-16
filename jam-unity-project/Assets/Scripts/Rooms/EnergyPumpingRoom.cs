@@ -1,6 +1,6 @@
 ﻿public class EnergyPumpingRoom : BaseRoom
 {
-  public override void Use()
+  protected override void UseImpl(Player player)
   {
     throw new System.NotImplementedException();
   }

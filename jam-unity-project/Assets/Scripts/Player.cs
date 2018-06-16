@@ -57,7 +57,12 @@ public class Player : MonoBehaviour
 			}
 		};
 
-	[SerializeField] private float _speed = 1;
+	public bool CanControll = true;
+
+	public float MoveHorizontal = 0f;
+	public float MoveVertical = 0f;
+	
+	[SerializeField] private float _speed = 5;
 	[SerializeField] private PlayerIndex _playerIndex;
 
 	private BaseRoom _currentRoom;
@@ -66,34 +71,42 @@ public class Player : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		var moveHorizontal = Input.GetAxis(_controlls[_playerIndex][Controll.Horizontal]);
-		var moveVertical = Input.GetAxis(_controlls[_playerIndex][Controll.Vertical]);
+		MoveHorizontal = Input.GetAxis(_controlls[_playerIndex][Controll.Horizontal]);
+		MoveVertical = Input.GetAxis(_controlls[_playerIndex][Controll.Vertical]);
 		
-		if(moveHorizontal != 0)
-			Debug.Log("H: " + _playerIndex + " " + moveHorizontal);
+		if(!CanControll)
+			return;
 		
-		if(moveVertical != 0)
-			Debug.Log("V: " + _playerIndex + " " + moveVertical);
-
-		var movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+		var movement = new Vector3 (MoveHorizontal, 0.0f, MoveVertical);
 
 		var rigid = GetComponent<Rigidbody>(); 
 		
 		rigid.velocity = movement * _speed;
+
+		var action = false;
 		
 		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.One))
 		{
 			Debug.Log("Fire_P1");
+			action = true;
 		}
 		
 		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.Two))
 		{
 			Debug.Log("Fire_P2");
+			action = true;
 		}
 		
 		if (GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.Two))
 		{
 			Debug.Log("Fire_P3");
+			action = true;
+		}
+		
+		if (action && _currentRoom != null && Time.time > _nextUse)
+		{
+			_nextUse = Time.time + UseRate;
+			_currentRoom.Use(this);
 		}
 	}
 
