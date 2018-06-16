@@ -34,7 +34,7 @@ namespace Rooms
 
     public void SufferBitch()
     {
-      CurrentHealth = 0;
+      //CurrentHealth = 0;
     }
   }
 }
