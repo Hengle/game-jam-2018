@@ -14095,7 +14095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1119843484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14352,6 +14352,11 @@ Prefab:
       propertyPath: m_Name
       value: SheepBacground
       objectReference: {fileID: 0}
+    - target: {fileID: 23212936114598752, guid: cdbec52167efb6a48b63cebb3284c246,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ca645c613e3c3e4c9fccbc3093a8ccc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cdbec52167efb6a48b63cebb3284c246, type: 2}
   m_IsPrefabParent: 0
