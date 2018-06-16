@@ -72,6 +72,14 @@ ModelImporter:
     100128: ship_floor71
     100130: ship_floor72
     100132: ship_floor73
+    100134: ship_floor74
+    100136: ship_floor75
+    100138: ship_floor76
+    100140: ship_floor77
+    100142: ship_floor78
+    100144: ship_floor79
+    100146: ship_floor80
+    100148: ship_floor81
     400000: //RootNode
     400002: ship_floor 1
     400004: ship_floor1
@@ -139,6 +147,14 @@ ModelImporter:
     400128: ship_floor71
     400130: ship_floor72
     400132: ship_floor73
+    400134: ship_floor74
+    400136: ship_floor75
+    400138: ship_floor76
+    400140: ship_floor77
+    400142: ship_floor78
+    400144: ship_floor79
+    400146: ship_floor80
+    400148: ship_floor81
     2100000: Atlas18
     2100002: Atlas19
     2300000: ship_floor 1
@@ -207,6 +223,14 @@ ModelImporter:
     2300126: ship_floor71
     2300128: ship_floor72
     2300130: ship_floor73
+    2300132: ship_floor74
+    2300134: ship_floor75
+    2300136: ship_floor76
+    2300138: ship_floor77
+    2300140: ship_floor78
+    2300142: ship_floor79
+    2300144: ship_floor80
+    2300146: ship_floor81
     3300000: ship_floor 1
     3300002: ship_floor1
     3300004: ship_floor2
@@ -273,6 +297,14 @@ ModelImporter:
     3300126: ship_floor71
     3300128: ship_floor72
     3300130: ship_floor73
+    3300132: ship_floor74
+    3300134: ship_floor75
+    3300136: ship_floor76
+    3300138: ship_floor77
+    3300140: ship_floor78
+    3300142: ship_floor79
+    3300144: ship_floor80
+    3300146: ship_floor81
     4300000: ship_floor1
     4300002: ship_floor
     4300004: ship_floor2
@@ -339,6 +371,14 @@ ModelImporter:
     4300126: ship_floor71
     4300128: ship_floor72
     4300130: ship_floor73
+    4300132: ship_floor74
+    4300134: ship_floor75
+    4300136: ship_floor76
+    4300138: ship_floor77
+    4300140: ship_floor78
+    4300142: ship_floor79
+    4300144: ship_floor80
+    4300146: ship_floor81
   externalObjects: {}
   materials:
     importMaterials: 1
