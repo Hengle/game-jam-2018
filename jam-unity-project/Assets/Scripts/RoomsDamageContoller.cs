@@ -23,7 +23,7 @@ public class RoomsDamageContoller : MonoBehaviour
       shieldRoom
     });
     
-    Done_PlayerController.Instance.SpaceHit += InstanceOnSpaceHit;
+    CollisionDetector.Instance.SpaceHit += InstanceOnSpaceHit;
   }
 
   private void InstanceOnSpaceHit()

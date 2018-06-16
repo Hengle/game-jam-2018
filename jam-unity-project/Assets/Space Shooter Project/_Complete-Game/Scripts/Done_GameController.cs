@@ -53,7 +53,7 @@ public class Done_GameController : MonoBehaviour
                 Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
                 //Quaternion spawnRotation = Quaternion.identity;
                 var asd = Instantiate(hazard, transform);//, spawnRotation);
-                //asd.transform.position = new Vector3();// spawnPosition;
+                asd.transform.localPosition = spawnPosition;
                 //asd.transform.rotation = hazard.transform.rotation;
                 yield return new WaitForSeconds(spawnWait);
             }

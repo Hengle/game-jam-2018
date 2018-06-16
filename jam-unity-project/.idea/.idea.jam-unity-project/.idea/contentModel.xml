@@ -17,6 +17,7 @@
           <e p="Readme.txt" t="Include" />
         </e>
       </e>
+      <e p="Assets\BulletsUITemp.cs" t="Include" />
       <e p="Assets\Cinemachine" t="Include">
         <e p="Base" t="Include">
           <e p="Editor" t="Include">
@@ -315,14 +316,22 @@
         </e>
       </e>
       <e p="Assets\Scripts" t="Include">
+        <e p="GameGod.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Rooms" t="Include">
           <e p="AmmunitionRoom.cs" t="Include" />
           <e p="BaseRoom.cs" t="Include" />
           <e p="EnergyPumpingRoom.cs" t="Include" />
           <e p="NavigationRoom.cs" t="Include" />
+          <e p="RepairKeyRoom.cs" t="Include" />
           <e p="ShieldRoom.cs" t="Include" />
           <e p="ShootRoom.cs" t="Include" />
+        </e>
+        <e p="RoomsDamageContoller.cs" t="Include" />
+        <e p="Ship" t="Include">
+          <e p="CollisionDetector.cs" t="Include" />
+          <e p="ShieldController.cs" t="Include" />
+          <e p="UIUpdater.cs" t="Include" />
         </e>
         <e p="Spawner.cs" t="Include" />
       </e>
@@ -348,6 +357,18 @@
             </e>
             <e p="Readme.cs" t="Include" />
           </e>
+        </e>
+      </e>
+      <e p="Assets\Vfx" t="Include">
+        <e p="Shaders" t="Include">
+          <e p="CameraFilterPack_AAA_SuperHexagon.cs" t="Include" />
+          <e p="CameraFilterPack_AAA_SuperHexagon.shader" t="Include" />
+          <e p="CameraFilterPack_FX_Glitch2.cs" t="Include" />
+          <e p="CameraFilterPack_FX_Glitch2.shader" t="Include" />
+          <e p="CameraFilterPack_TV_ARCADE.cs" t="Include" />
+          <e p="CameraFilterPack_TV_ARCADE.shader" t="Include" />
+          <e p="SheepMain.shader" t="Include" />
+          <e p="Shield.shader" t="Include" />
         </e>
       </e>
       <e p="jam-unity-project.sln" t="IncludeFlat" />

@@ -14,7 +14,7 @@ public class Done_PlayerController : MonoBehaviour
 
   public static Done_PlayerController Instance
   {
-    get { return _instance ?? (_instance = GameObject.Find("SPACE_PLAYER").GetComponent<Done_PlayerController>()); }
+    get { return _instance; }
   }
 
   public float speed;
@@ -25,17 +25,22 @@ public class Done_PlayerController : MonoBehaviour
   public Transform shotSpawn;
   public float fireRate;
 
-  public event Action SpaceHit = delegate {  };
 
   private float nextFire;
 
+  public void Awake()
+  {
+    _instance = this;
+  }
+  
   public void Shoot()
   {
     if (Time.time > nextFire)
     {
       nextFire = Time.time + fireRate;
-      Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-      GetComponent<AudioSource>().Play();
+      var obj = Instantiate(shot, shotSpawn);
+      obj.transform.Rotate(shotSpawn.forward);
+      //GetComponent<AudioSource>().Play();
     }
   }
 
@@ -75,8 +80,4 @@ public class Done_PlayerController : MonoBehaviour
     rigid.velocity = movement * speed;
   }
 
-  public void Rise()
-  {
-    SpaceHit();
-  }
 }

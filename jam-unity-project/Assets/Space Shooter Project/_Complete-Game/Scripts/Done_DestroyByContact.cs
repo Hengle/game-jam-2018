@@ -41,7 +41,7 @@ public class Done_DestroyByContact : MonoBehaviour
 		
 		//gameController.AddScore(scoreValue);
 
-		Done_PlayerController.Instance.Rise();
+		CollisionDetector.Instance.Rise();
 		
 		//Destroy (other.gameObject);
 		Destroy (gameObject);

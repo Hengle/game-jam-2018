@@ -59,8 +59,6 @@ GameObject:
   - component: {fileID: 400006}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 5400000}
-  - component: {fileID: 11400000}
   - component: {fileID: 8200000}
   - component: {fileID: 135945333397604950}
   m_Layer: 0
@@ -196,21 +194,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_Mesh: {fileID: 4300002, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
---- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -291,27 +274,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 054c19cd9824a4257a98a59874c988f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  tilt: 5
-  boundary:
-    xMin: 0
-    xMax: 0
-    zMin: 0
-    zMax: 0
-  shot: {fileID: 100000, guid: f4ec271e525e14ca9927a07e6a2e153d, type: 2}
-  shotSpawn: {fileID: 400004}
-  fireRate: 0.25
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
