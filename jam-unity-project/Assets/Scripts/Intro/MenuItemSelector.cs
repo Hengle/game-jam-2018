@@ -65,6 +65,16 @@ public class MenuItemSelector : MonoBehaviour
         {
             var dpad = GamePad.GetAxis(GamePad.Axis.Dpad, GamePad.Index.Any);
 
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            {
+                dpad.y = -1;
+            }
+
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            {
+                dpad.y = 1;
+            }
+
             if (Math.Abs(dpad.y - _previousValue) > 0.001f)
             {
                 _previousValue = dpad.y;
@@ -96,7 +106,9 @@ public class MenuItemSelector : MonoBehaviour
             }
         }
 
-        if (GamePad.GetButtonDown(GamePad.Button.A, GamePad.Index.Any))
+        if (GamePad.GetButtonDown(GamePad.Button.A, GamePad.Index.Any)
+            || Input.GetKeyDown(KeyCode.Space)
+            || Input.GetKeyDown(KeyCode.Return))
         {
             _locked = true;
             BlinkFaster();

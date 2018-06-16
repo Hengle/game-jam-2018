@@ -20,7 +20,8 @@ public class AnyButtonPress : MonoBehaviour
         if (GamePad.GetButtonDown(GamePad.Button.A, GamePad.Index.Any)
             || GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.Any)
             || GamePad.GetButtonDown(GamePad.Button.X, GamePad.Index.Any)
-            || GamePad.GetButtonDown(GamePad.Button.Y, GamePad.Index.Any))
+            || GamePad.GetButtonDown(GamePad.Button.Y, GamePad.Index.Any)
+            || Input.anyKeyDown)
         {
             Pd.Play();
             StartCoroutine(Load());
