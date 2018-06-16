@@ -7,17 +7,19 @@ public class SelectedMenuItem : MonoBehaviour
     public Color DefaultColor;
 
     public Color BlinkColor;
+    public Color SelectedBlinkColor;
     public float BlinkSpeed;
     public float NormalSpeed;
 
     private Text _text;
 
     private float _speed;
+    private Color _color;
 
     public bool IsBlinking;
 
     // Use this for initialization
-    private void Start()
+    private void Awake()
     {
         _text = GetComponent<Text>();
         SelectNormal();
@@ -25,6 +27,7 @@ public class SelectedMenuItem : MonoBehaviour
 
     public void Select()
     {
+        _color = SelectedBlinkColor;
         IsBlinking = true;
         _speed = BlinkSpeed;
         StartCoroutine("ChangeColor");
@@ -32,6 +35,7 @@ public class SelectedMenuItem : MonoBehaviour
 
     public void SelectNormal()
     {
+        _color = BlinkColor;
         IsBlinking = true;
         _speed = NormalSpeed;
         StartCoroutine("ChangeColor");
@@ -48,7 +52,7 @@ public class SelectedMenuItem : MonoBehaviour
     {
         while (true)
         {
-            _text.color = BlinkColor;
+            _text.color = _color;
             yield return new WaitForSeconds(_speed);
             _text.color = DefaultColor;
             yield return new WaitForSeconds(_speed);
