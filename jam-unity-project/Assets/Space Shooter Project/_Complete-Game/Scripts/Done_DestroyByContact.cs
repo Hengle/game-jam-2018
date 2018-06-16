@@ -17,7 +17,7 @@ public class Done_DestroyByContact : MonoBehaviour
 		}
 		if (gameController == null)
 		{
-			Debug.Log ("Cannot find 'GameController' script");
+			//Debug.Log ("Cannot find 'GameController' script");
 		}
 	}
 

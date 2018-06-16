@@ -64,14 +64,14 @@ public class Done_PlayerController : MonoBehaviour
   public void MoveHorizontal(float directionAndPower)
   {
     var rigid = GetComponent<Rigidbody>();
-    Vector3 movement = new Vector3(directionAndPower, 0.0f, rigid.velocity.y);
+    Vector3 movement = new Vector3(directionAndPower, 0.0f, rigid.velocity.z);
     rigid.velocity = movement * speed;
   }
 
   public void MoveVertical(float directionAndPower)
   {
     var rigid = GetComponent<Rigidbody>();
-    Vector3 movement = new Vector3(rigid.velocity.z, 0.0f, directionAndPower);
+    Vector3 movement = new Vector3(rigid.velocity.x, directionAndPower, 0);
     rigid.velocity = movement * speed;
   }
 
