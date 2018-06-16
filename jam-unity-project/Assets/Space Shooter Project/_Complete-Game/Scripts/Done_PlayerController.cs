@@ -16,7 +16,7 @@ public class Done_PlayerController : MonoBehaviour
   {
     get { return _instance; }
   }
-
+  
   public float speed;
   public float tilt;
   public Done_Boundary boundary;
@@ -77,6 +77,13 @@ public class Done_PlayerController : MonoBehaviour
       pos.x = boundary.xMax - 0.2f;
     }
 
+    rigidBody.position = new Vector3
+		(
+			rigidBody.position.x,
+			Mathf.Clamp (GetComponent<Rigidbody>().position.y, boundary.zMin, boundary.zMax), 
+			rigidBody.position.z
+		);
+    
     transform.localPosition = pos;
   }
 

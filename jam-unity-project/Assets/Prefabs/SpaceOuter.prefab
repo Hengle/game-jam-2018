@@ -1140,8 +1140,8 @@ MonoBehaviour:
   boundary:
     xMin: -8
     xMax: 8
-    zMin: 0
-    zMax: 0
+    zMin: -9
+    zMax: 9
   shot: {fileID: 100000, guid: f4ec271e525e14ca9927a07e6a2e153d, type: 2}
   shotSpawn: {fileID: 4115123924824766}
   fireRate: 0.25
