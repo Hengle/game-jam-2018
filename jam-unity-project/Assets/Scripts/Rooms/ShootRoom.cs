@@ -15,18 +15,17 @@ public class ShootRoom : BaseRoom
   }
 
   protected override void UseImpl(Player player)
-  {
-    if (CurrentPlayer == null)
-    {
-      CurrentPlayer = player;
-      CurrentPlayer.CanControll = false;
-      IsLocked = true;
-    }
-    else if (player.HaveAmmo)
+  {    
+    if (player.HaveAmmo)
     {
       GameGod.Instance.CurrentBullets = GameGod.Instance.MaximumBullets;
       player.DropAmmo();
+      return;
     }
+    
+    CurrentPlayer = player;
+    CurrentPlayer.CanControll = false;
+    IsLocked = true;
     
     if(GameGod.Instance.CurrentBullets > 0)
     {
