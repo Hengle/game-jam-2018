@@ -9,7 +9,6 @@ public class EnergyPumpingRoom : BaseRoom
     if (CurrentPlayer == null)
       return;
 
-    CurrentPlayer.CanControll = true;
     CurrentPlayer = null;
   }
 
@@ -18,7 +17,6 @@ public class EnergyPumpingRoom : BaseRoom
     if (CurrentPlayer == null)
     {
       CurrentPlayer = player;
-      CurrentPlayer.CanControll = false;
     } else
     {
       GameGod.Instance.AddEnergy();
