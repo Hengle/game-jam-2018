@@ -43,7 +43,7 @@ public class Done_DestroyByContact : MonoBehaviour
 
 		Done_PlayerController.Instance.Rise();
 		
-		Destroy (other.gameObject);
+		//Destroy (other.gameObject);
 		Destroy (gameObject);
 	}
 }
