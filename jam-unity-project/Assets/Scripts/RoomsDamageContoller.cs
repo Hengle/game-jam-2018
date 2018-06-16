@@ -54,11 +54,21 @@ public class RoomsDamageContoller : MonoBehaviour
 
   private BaseRoom GetRandomRoom()
   {
-    var index = new System.Random().Next(0, _rooms.Count - 1);
+    var index = Random.Range(0, _rooms.Count);
     var room = _rooms[index];
 
-    if (_rooms.All(r => r.CurrentHealth == 0))
+    var enyWorking = false; //AWOID CRASH
+    foreach (var r in _rooms)
+    {
+      if (r.CurrentHealth > 0)
+        enyWorking = true;
+    }
+
+    if (!enyWorking)
+    {
+      Debug.Log("Ship is destroyed");
       return null;
+    }
     
     if (room.CurrentHealth == 0)
       return GetRandomRoom();
