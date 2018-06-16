@@ -10,6 +10,7 @@ public class ShootRoom : BaseRoom
       return;
 
     CurrentPlayer.CanControll = true;
+    IsLocked = false;
     CurrentPlayer = null;
   }
 
@@ -19,6 +20,7 @@ public class ShootRoom : BaseRoom
     {
       CurrentPlayer = player;
       CurrentPlayer.CanControll = false;
+      IsLocked = true;
     }
     else if (player.HaveAmmo)
     {

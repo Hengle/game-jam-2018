@@ -12,6 +12,7 @@ public class NavigationRoom : BaseRoom
       return;
 
     CurrentPlayer.CanControll = true;
+    IsLocked = false;
     CurrentPlayer = null;
   }
 
@@ -21,6 +22,7 @@ public class NavigationRoom : BaseRoom
     {
       CurrentPlayer = player;
       CurrentPlayer.CanControll = false;
+      IsLocked = true;
       StartCoroutine(EnergyConsumption());
     }
   }

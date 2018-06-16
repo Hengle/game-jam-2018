@@ -12,32 +12,49 @@ namespace ControllHelpers
     private void Start()
     {
       var player = GetComponentInChildren<Player>();
-      player.OnRoomChange += PlayerOnRoomChange;
+      player.OnRoomStateChange += PlayerOnRoomChange;
       
       PlayerOnRoomChange(player.CurrentRoom);
     }
 
     private void PlayerOnRoomChange(BaseRoom room)
     {
+      LeftStick.SetActive(false);
+      XButton.SetActive(false);
+      OButton.SetActive(false);
+      
       if (room == null)
       {
-        LeftStick.SetActive(false);
-        XButton.SetActive(false);
-        OButton.SetActive(false);
-        
         return;
       }
 
-      foreach (var key in room.HelperKeys)
+      if(room.IsLocked)
       {
-        if (key == ControllHelperKey.LeftStick)
-          LeftStick.SetActive(true);
+        foreach (var key in room.HelperActiveKeys)
+        {
+          if (key == ControllHelperKey.LeftStick)
+            LeftStick.SetActive(true);
         
-        if(key == ControllHelperKey.ButtonX)
-          XButton.SetActive(true);
+          if(key == ControllHelperKey.ButtonX)
+            XButton.SetActive(true);
         
-        if(key == ControllHelperKey.ButtonO)
-          OButton.SetActive(true);
+          if(key == ControllHelperKey.ButtonO)
+            OButton.SetActive(true);
+        }
+      }
+      else
+      {
+        foreach (var key in room.HelperInactiveKeys)
+        {
+          if (key == ControllHelperKey.LeftStick)
+            LeftStick.SetActive(true);
+
+          if (key == ControllHelperKey.ButtonX)
+            XButton.SetActive(true);
+
+          if (key == ControllHelperKey.ButtonO)
+            OButton.SetActive(true);
+        }
       }
     }
   }

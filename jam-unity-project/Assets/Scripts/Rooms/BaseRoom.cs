@@ -9,11 +9,19 @@ namespace Rooms
     public int MaxHealth = 10;
 
     [SerializeField] private GameObject _damaged;
-    [SerializeField] private ControllHelperKey[] _keys;
+    [SerializeField] private ControllHelperKey[] _inactiveKeys;
+    [SerializeField] private ControllHelperKey[] _activeKeys;
 
-    public ControllHelperKey[] HelperKeys
+    public bool IsLocked = false;
+    
+    public ControllHelperKey[] HelperInactiveKeys
     {
-      get { return _keys; }
+      get { return _inactiveKeys; }
+    }
+
+    public ControllHelperKey[] HelperActiveKeys
+    {
+      get { return _activeKeys; }
     }
 
     public void Use(Player player)

@@ -21,7 +21,7 @@ public enum Controll
 
 public class Player : MonoBehaviour
 {
-	public Action<BaseRoom> OnRoomChange = r => { };
+	public Action<BaseRoom> OnRoomStateChange = r => { };
 
 	public BaseRoom CurrentRoom
 	{
@@ -109,6 +109,7 @@ public class Player : MonoBehaviour
 			
 		DropAmmo();
 		DropRepairKey();
+		OnRoomStateChange(_currentRoom);
 	}
 
 	private void Start()
@@ -141,6 +142,8 @@ public class Player : MonoBehaviour
 		{
 			_nextUse = Time.time + UseRate;
 			_currentRoom.Use(this);
+			
+			OnRoomStateChange(_currentRoom);
 		}
 
 		if (needCansel)
@@ -167,7 +170,7 @@ public class Player : MonoBehaviour
 
 		_currentRoom = room;
 
-		OnRoomChange(_currentRoom);
+		OnRoomStateChange(_currentRoom);
 	}
 	
 	private void OnTriggerExit(Collider other)
@@ -179,7 +182,7 @@ public class Player : MonoBehaviour
 
 		_currentRoom = null;
 
-		OnRoomChange(_currentRoom);
+		OnRoomStateChange(_currentRoom);
 	}
 	
 	private Dictionary<PlayerIndex, Dictionary<Controll, string>> _controlls =

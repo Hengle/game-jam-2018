@@ -521,6 +521,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979a2ffcb5bde0848b995397bf21f1f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftStick: {fileID: 1521887609083318}
+  XButton: {fileID: 1964152725463808}
+  OButton: {fileID: 1237456242421538}
 --- !u!136 &136519580618670906
 CapsuleCollider:
   m_ObjectHideFlags: 1
