@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,21 +11,16 @@ public class GameGod : MonoBehaviour {
 	{
 		get { return _instance ?? (_instance = GameObject.Find("GameGod").GetComponent<GameGod>()); }
 	}
+	
+	public event Action Updated = delegate {  };
 
 	public float EnergyIncrement;
 	public float Energy;
 	public float MaximumEnergy;
-	
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
+	public float ShieldActivationEnergy = 20;
+	public bool ShieldIsActivated;
+	
 	public void AddEnergy()
 	{
 		Energy += EnergyIncrement;
@@ -32,5 +28,21 @@ public class GameGod : MonoBehaviour {
 		{
 			Energy = MaximumEnergy;
 		}
+	}
+
+	public void ActivateShield()
+	{
+		if (Energy > ShieldActivationEnergy)
+		{
+			ShieldIsActivated = true;
+			Energy -= ShieldActivationEnergy;
+		}
+		Updated();
+	}
+
+	public void DeactivateShield()
+	{
+		ShieldIsActivated = false;
+		Updated();
 	}
 }

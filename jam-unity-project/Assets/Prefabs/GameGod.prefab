@@ -51,6 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ed4b6011b5cd044a08d7ab55bd98fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnergyIncrement: 0
+  EnergyIncrement: 3
   Energy: 0
-  MaximumEnergy: 0
+  MaximumEnergy: 100
+  ShieldActivationEnergy: 20
+  ShieldIsActivated: 0

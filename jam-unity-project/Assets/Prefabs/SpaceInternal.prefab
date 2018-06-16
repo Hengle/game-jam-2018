@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 222849456847564598}
   - component: {fileID: 114022083583476158}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ProgressBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 223721435411438692}
   - component: {fileID: 114344946524737558}
   - component: {fileID: 114718841270414600}
+  - component: {fileID: 114837833210003620}
   m_Layer: 5
   m_Name: SpaceUI
   m_TagString: Untagged
@@ -703,21 +704,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 89efcba9247bb4e449840230fbad0281, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillAmount: 0.5
+  m_FillClockwise: 0
+  m_FillOrigin: 3
 --- !u!114 &114213777252005804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -812,6 +813,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114837833210003620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923206691052934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d859af4ff934ce44b998ed08549d2238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProhressBar: {fileID: 114022083583476158}
 --- !u!135 &135958497873417748
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -14946,8 +14959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.09909999, y: -5.3412013}
-  m_SizeDelta: {x: 357.4874, y: 168.1125}
+  m_AnchoredPosition: {x: -0.063, y: -3.906}
+  m_SizeDelta: {x: 705.687, y: 786.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224751607259670126
 RectTransform:
@@ -14964,6 +14977,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5.3, y: 21.1}
+  m_SizeDelta: {x: 253.2, y: 245.1}
   m_Pivot: {x: 0.5, y: 0.5}
