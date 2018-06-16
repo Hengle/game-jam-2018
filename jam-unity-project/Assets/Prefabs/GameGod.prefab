@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4652677921147390}
   - component: {fileID: 114710625852178448}
+  - component: {fileID: 114407329986232748}
   m_Layer: 0
   m_Name: GameGod
   m_TagString: Untagged
@@ -40,6 +41,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114407329986232748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1233168209085566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3724c94f29ace614190620d809201a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114710625852178448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,8 +63,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ed4b6011b5cd044a08d7ab55bd98fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnergyIncrement: 3
+  EnergyIncrement: 10
   Energy: 0
   MaximumEnergy: 100
+  BulletsIncrement: 10
+  CurrentBullets: 10
+  MaximumBullets: 10
   ShieldActivationEnergy: 20
   ShieldIsActivated: 0

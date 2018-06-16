@@ -21,5 +21,10 @@ namespace Rooms
 
     protected abstract void CancelImpl(Player player);
     protected abstract void UseImpl(Player player);
+
+    public void SufferBitch()
+    {
+      Health = 0;
+    }
   }
 }
