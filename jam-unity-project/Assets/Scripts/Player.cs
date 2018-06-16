@@ -12,7 +12,9 @@ public enum PlayerIndex
 public enum Controll
 {
 	Horizontal,
-	Vertical
+	Vertical,
+	Activate,
+	Cancel
 }
 
 public class Player : MonoBehaviour
@@ -28,6 +30,12 @@ public class Player : MonoBehaviour
 					},
 					{
 						Controll.Vertical, "Vertical_P1"
+					},
+					{
+						Controll.Activate, "Activate_P1"
+					},
+					{
+						Controll.Cancel, "Cancel_P1"
 					}
 				}
 			},
@@ -40,6 +48,12 @@ public class Player : MonoBehaviour
 					},
 					{
 						Controll.Vertical, "Vertical_P2"
+					},
+					{
+						Controll.Activate, "Activate_P2"
+					},
+					{
+						Controll.Cancel, "Cancel_P2"
 					}
 				}
 			},
@@ -52,6 +66,12 @@ public class Player : MonoBehaviour
 					},
 					{
 						Controll.Vertical, "Vertical_P3"
+					},
+					{
+						Controll.Activate, "Activate_P3"
+					},
+					{
+						Controll.Cancel, "Cancel_P3"
 					}
 				}
 			}
@@ -83,7 +103,8 @@ public class Player : MonoBehaviour
 		
 		rigid.velocity = movement * _speed;
 
-		var action = false;
+		var action = Input.GetAxis(_controlls[_playerIndex][Controll.Activate]) > 0;
+		var cansel = Input.GetAxis(_controlls[_playerIndex][Controll.Cancel]) > 0;
 		
 		if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.One))
 		{
