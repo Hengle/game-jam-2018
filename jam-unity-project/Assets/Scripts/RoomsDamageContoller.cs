@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Rooms;
 using UnityEngine;
 
@@ -34,10 +35,27 @@ public class RoomsDamageContoller : MonoBehaviour
     }
     else
     {
-      var randomRoom = new System.Random().Next(0,_rooms.Count);
-      var targetRoom = _rooms[randomRoom];
+      var randomRoom = GetRandomRoom();
 
-      targetRoom.SufferBitch();
+      if (randomRoom != null)
+      {
+        Debug.Log(randomRoom.GetType().FullName);
+        randomRoom.SufferBitch();
+      }
     }
+  }
+
+  private BaseRoom GetRandomRoom()
+  {
+    var index = new System.Random().Next(0, _rooms.Count - 1);
+    var room = _rooms[index];
+
+    if (_rooms.All(r => r.CurrentHealth == 0))
+      return null;
+    
+    if (room.CurrentHealth == 0)
+      return GetRandomRoom();
+    
+    return _rooms[index];
   }
 }
