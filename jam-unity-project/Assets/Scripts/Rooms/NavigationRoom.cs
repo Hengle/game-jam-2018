@@ -28,6 +28,9 @@ public class NavigationRoom : BaseRoom
   
   private void FixedUpdate()
   {
+    if (CurrentPlayer == null)
+      return;
+    
     if (NeedToStop())
     {
       StopCoroutine(EnergyConsumption());
