@@ -127,7 +127,7 @@ public class Player : MonoBehaviour
 	public int RepairKeyMaxHealth = 1;
 
 	private BaseRoom _currentRoom;
-	private const float UseRate = 0.5f;
+	private const float UseRate = 0.1f;
 	private float _nextUse;
 	private int _repairKeyHealth;
 
