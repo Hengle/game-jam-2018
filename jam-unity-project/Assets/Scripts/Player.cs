@@ -76,6 +76,19 @@ public class Player : MonoBehaviour
 				}
 			}
 		};
+	
+	private Dictionary<PlayerIndex, GamePad.Index> _gamePadMap = new Dictionary<PlayerIndex, GamePad.Index>
+	{
+		{
+			PlayerIndex.One, GamePad.Index.One
+		},
+		{
+			PlayerIndex.Two, GamePad.Index.Two
+		},
+		{
+			PlayerIndex.Three, GamePad.Index.Three
+		},
+	};
 
 	public bool CanControll = true;
 
@@ -106,12 +119,19 @@ public class Player : MonoBehaviour
 		var action = Input.GetAxis(_controlls[_playerIndex][Controll.Activate]) > 0;
 		var cansel = Input.GetAxis(_controlls[_playerIndex][Controll.Cancel]) > 0;
 		
-		if (GamePad.GetButtonDown(GamePad.Button.B, GamePad.Index.One))
+		if (GamePad.GetButtonDown(GamePad.Button.B, _gamePadMap[_playerIndex]))
 		{
 			if (_currentRoom != null)
 				_currentRoom.Use(this);
 			
+			Debug.Log("Activate_P" + ((int)_playerIndex + 1));
 			action = true;
+		}
+		
+		if (GamePad.GetButtonDown(GamePad.Button.X, _gamePadMap[_playerIndex]))
+		{
+			Debug.Log("Cansel_P" + ((int)_playerIndex + 1));
+			cansel = true;
 		}
 		
 		if (action && _currentRoom != null && Time.time > _nextUse)
