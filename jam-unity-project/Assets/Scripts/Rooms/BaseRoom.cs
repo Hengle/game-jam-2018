@@ -7,15 +7,19 @@ namespace Rooms
     public int CurrentHealth = 1;
     public int MaxHealth = 10;
 
+    [SerializeField] private GameObject _damaged;
+
     public void Use(Player player)
     {
       if (player.HaveRepairKey && CurrentHealth == 0)
       {
-        CurrentHealth++;
-        player.RepairKeyHealth--;
+        CurrentHealth = MaxHealth;
+        player.RepairKeyHealth = 0;
         
         if (CurrentHealth > MaxHealth)
           CurrentHealth = MaxHealth;
+        
+        return;
       }
 
       if(CurrentHealth == 0)
@@ -34,7 +38,12 @@ namespace Rooms
 
     public void SufferBitch()
     {
-      //CurrentHealth = 0;
+      CurrentHealth = 0;
+    }
+
+    private void Update()
+    {
+      _damaged.SetActive(CurrentHealth == 0);
     }
   }
 }

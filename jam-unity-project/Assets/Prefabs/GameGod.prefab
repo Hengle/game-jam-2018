@@ -72,4 +72,4 @@ MonoBehaviour:
   CurrentBullets: 10
   MaximumBullets: 10
   ShieldActivationEnergy: 20
-  ShieldIsActivated: 0
+  ShieldIsActivated: 1

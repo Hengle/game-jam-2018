@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SCShader: {fileID: 4800000, guid: d1ea5c2516692244488450c91dc83bb2, type: 3}
-  Glitch: 0.343
+  Glitch: 0.157
 --- !u!114 &1426788551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SCShader: {fileID: 4800000, guid: 14156ee2cd4dade4a8da9c29407b9203, type: 3}
-  Fade: 0.462
+  Fade: 0.411
 --- !u!81 &1426788553
 AudioListener:
   m_ObjectHideFlags: 0
