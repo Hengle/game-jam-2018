@@ -50,11 +50,11 @@ public class Done_GameController : MonoBehaviour
             for (int i = 0; i < hazardCount; i++)
             {
                 GameObject hazard = hazards[Random.Range(0, hazards.Length)];
-                Vector3 spawnPosition = transform.position + new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
                 //Quaternion spawnRotation = Quaternion.identity;
-                var asd = Instantiate(hazard);//, spawnRotation);
-                asd.transform.position = spawnPosition;
-                asd.transform.rotation = hazard.transform.rotation;
+                var asd = Instantiate(hazard, transform);//, spawnRotation);
+                //asd.transform.position = new Vector3();// spawnPosition;
+                //asd.transform.rotation = hazard.transform.rotation;
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
@@ -76,7 +76,7 @@ public class Done_GameController : MonoBehaviour
 
     void UpdateScore()
     {
-        scoreText.text = "Score: " + score;
+        //scoreText.text = "Score: " + score;
     }
 
     public void GameOver()
