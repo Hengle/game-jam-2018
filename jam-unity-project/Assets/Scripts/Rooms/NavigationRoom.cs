@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Rooms;
 using UnityEngine;
 
@@ -34,7 +33,6 @@ public class NavigationRoom : BaseRoom
     if (NeedToStop())
     {
       StopCoroutine(EnergyConsumption());
-      CurrentPlayer.Cancel();
       return;
     }
 
@@ -54,7 +52,9 @@ public class NavigationRoom : BaseRoom
       if (NeedToStop())
         break;
       
-      GameGod.Instance.Energy -= GameGod.Instance.NavigationEnergyConsumption;
+      if(CurrentPlayer.MoveHorizontal > 0 || CurrentPlayer.MoveVertical > 0)
+        GameGod.Instance.Energy -= GameGod.Instance.NavigationEnergyConsumption;
+      
       yield return new WaitForSeconds(GameGod.Instance.NavigationEnergyTimeOut); 
     }
   }
