@@ -69,8 +69,11 @@ public class Player : MonoBehaviour
 		var moveHorizontal = Input.GetAxis(_controlls[_playerIndex][Controll.Horizontal]);
 		var moveVertical = Input.GetAxis(_controlls[_playerIndex][Controll.Vertical]);
 		
-		Debug.Log("H: " + _playerIndex + " " + moveHorizontal);
-		Debug.Log("V: " + _playerIndex + " " + moveVertical);
+		if(moveHorizontal != 0)
+			Debug.Log("H: " + _playerIndex + " " + moveHorizontal);
+		
+		if(moveVertical != 0)
+			Debug.Log("V: " + _playerIndex + " " + moveVertical);
 
 		var movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
