@@ -13,12 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NextId: 0
   m_Tracks:
-  - {fileID: 114583524477427002}
+  - {fileID: 114537293571296300}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
---- !u!74 &74701225165257188
+--- !u!74 &74003996608027806
 AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -41,25 +41,37 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.9
-        value: {x: 12.17, y: 0, z: -6.04}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        time: 2.1
+        value: {x: 14.043, y: 0, z: 14.99}
+        inSlope: {x: 6.260378, y: 0, z: 0}
+        outSlope: {x: 6.260378, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 4.383333
-        value: {x: -0.06, y: 0, z: 0.7}
-        inSlope: {x: 0, y: 0, z: 3.4136243}
-        outSlope: {x: 0, y: 0, z: 3.4136243}
+        time: 3.5333333
+        value: {x: 22.12, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: -12.925488}
+        outSlope: {x: 0, y: 0, z: -12.925488}
         tangentMode: 0
       - serializedVersion: 2
-        time: 8.016666
-        value: {x: 8.05, y: 0, z: 14.84}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        time: 4.65
+        value: {x: -1.006, y: 0, z: -17.97}
+        inSlope: {x: -12.4275465, y: 0, z: 0}
+        outSlope: {x: -12.4275465, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 9.483334
+        time: 6.3166666
+        value: {x: -12.47, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 7.7569723}
+        outSlope: {x: 0, y: 0, z: 7.7569723}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 8.833333
+        value: {x: -3.111, y: 0, z: 14.48}
+        inSlope: {x: 2.9165626, y: 0, z: 0}
+        outSlope: {x: 2.9165626, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 10.583333
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -120,7 +132,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 9.483334
+    m_StopTime: 10.583333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -146,25 +158,37 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.9
-        value: 12.17
+        time: 2.1
+        value: 14.043
+        inSlope: 6.260378
+        outSlope: 6.260378
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.5333333
+        value: 22.12
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.383333
-        value: -0.06
+        time: 4.65
+        value: -1.006
+        inSlope: -12.4275465
+        outSlope: -12.4275465
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.3166666
+        value: -12.47
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 8.016666
-        value: 8.05
-        inSlope: 0
-        outSlope: 0
+        time: 8.833333
+        value: -3.111
+        inSlope: 2.9165626
+        outSlope: 2.9165626
         tangentMode: 136
       - serializedVersion: 2
-        time: 9.483334
+        time: 10.583333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -186,25 +210,37 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.9
+        time: 2.1
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.383333
+        time: 3.5333333
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 8.016666
+        time: 4.65
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 9.483334
+        time: 6.3166666
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.833333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 10.583333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -226,25 +262,37 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.9
-        value: -6.04
+        time: 2.1
+        value: 14.99
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.383333
-        value: 0.7
-        inSlope: 3.4136243
-        outSlope: 3.4136243
+        time: 3.5333333
+        value: 0
+        inSlope: -12.925488
+        outSlope: -12.925488
         tangentMode: 136
       - serializedVersion: 2
-        time: 8.016666
-        value: 14.84
+        time: 4.65
+        value: -17.97
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 9.483334
+        time: 6.3166666
+        value: 0
+        inSlope: 7.7569723
+        outSlope: 7.7569723
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 8.833333
+        value: 14.48
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 10.583333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -291,7 +339,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 1
   m_Events: []
---- !u!114 &114583524477427002
+--- !u!114 &114537293571296300
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -305,13 +353,13 @@ MonoBehaviour:
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 74701225165257188}
+  m_AnimClip: {fileID: 74003996608027806}
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips: []
   m_OpenClipPreExtrapolation: 1
   m_OpenClipPostExtrapolation: 1
-  m_OpenClipOffsetPosition: {x: 8.02, y: 0, z: 5.85}
+  m_OpenClipOffsetPosition: {x: 9.02, y: 0, z: 3.78}
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_OpenClipTimeOffset: 0
   m_MatchTargetFields: 63
