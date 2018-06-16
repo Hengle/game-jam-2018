@@ -31,5 +31,10 @@ public class ShootRoom : BaseRoom
       GameGod.Instance.CurrentBullets--;
       Done_PlayerController.Instance.Shoot();
     }
+
+    if (GameGod.Instance.CurrentBullets == 0)
+    {
+      player.Cancel();
+    }
   }
 }

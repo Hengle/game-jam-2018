@@ -165,6 +165,15 @@ public class Player : MonoBehaviour
 		_repairKey.SetActive(false);
 	}
 
+	public void Cancel()
+	{
+		if (_currentRoom != null)
+			_currentRoom.Cansel(this);
+			
+		DropAmmo();
+		DropRepairKey();
+	}
+
 	private void Start()
 	{
 		DropAmmo();
@@ -177,7 +186,7 @@ public class Player : MonoBehaviour
 		MoveVertical = Input.GetAxis(_controlls[_playerIndex][Controll.Vertical]);
 
 		var action = Input.GetAxis(_controlls[_playerIndex][Controll.Activate]) > 0;
-		var cansel = Input.GetAxis(_controlls[_playerIndex][Controll.Cancel]) > 0;
+		var needCansel = Input.GetAxis(_controlls[_playerIndex][Controll.Cancel]) > 0;
 		
 		if (GamePad.GetButtonDown(GamePad.Button.B, _gamePadMap[_playerIndex]))
 		{
@@ -187,7 +196,7 @@ public class Player : MonoBehaviour
 		
 		if (GamePad.GetButtonDown(GamePad.Button.X, _gamePadMap[_playerIndex]))
 		{
-			cansel = true;
+			needCansel = true;
 			Debug.Log("Cansel_P" + ((int)_playerIndex + 1));
 		}
 		
@@ -197,13 +206,9 @@ public class Player : MonoBehaviour
 			_currentRoom.Use(this);
 		}
 
-		if (cansel)
+		if (needCansel)
 		{
-			if (_currentRoom != null)
-				_currentRoom.Cansel(this);
-			
-			DropAmmo();
-			DropRepairKey();
+			Cancel();
 		}
 		
 		if(!CanControll)
