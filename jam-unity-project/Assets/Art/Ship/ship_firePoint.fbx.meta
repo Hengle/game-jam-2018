@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: e73458e625b84324181545d65fae8968
+timeCreated: 1529155725
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ship_firePoint_battery
+    100004: ship_firePoint_battery1
+    100006: ship_firePoint_control
+    100008: ship_firePoint_controlBottom
+    100010: ship_firePoint_LED
+    100012: ship_firePoint_shelf
+    400000: //RootNode
+    400002: ship_firePoint_battery
+    400004: ship_firePoint_battery1
+    400006: ship_firePoint_control
+    400008: ship_firePoint_controlBottom
+    400010: ship_firePoint_LED
+    400012: ship_firePoint_shelf
+    2100000: Atlas8
+    2100002: LED2
+    2100004: Atlas9
+    2100006: Atlas11
+    2100008: LED3
+    2100010: Atlas13
+    2100012: Atlas12
+    2100014: LED4
+    2300000: ship_firePoint_battery
+    2300002: ship_firePoint_battery1
+    2300004: ship_firePoint_control
+    2300006: ship_firePoint_controlBottom
+    2300008: ship_firePoint_LED
+    2300010: ship_firePoint_shelf
+    3300000: ship_firePoint_battery
+    3300002: ship_firePoint_battery1
+    3300004: ship_firePoint_control
+    3300006: ship_firePoint_controlBottom
+    3300008: ship_firePoint_LED
+    3300010: ship_firePoint_shelf
+    4300000: ship_firePoint_LED
+    4300002: ship_firePoint_battery1
+    4300004: ship_firePoint_battery
+    4300006: ship_firePoint_control
+    4300008: ship_firePoint_controlBottom
+    4300010: ship_firePoint_shelf
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
