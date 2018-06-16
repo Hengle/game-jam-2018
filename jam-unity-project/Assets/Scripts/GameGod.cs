@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameGod : MonoBehaviour {
@@ -9,7 +7,7 @@ public class GameGod : MonoBehaviour {
 
 	public static GameGod Instance
 	{
-		get { return _instance ?? (_instance = GameObject.Find("GameGod").GetComponent<GameGod>()); }
+		get { return _instance; }
 	}
 	
 	public event Action Updated = delegate {  };
@@ -17,6 +15,15 @@ public class GameGod : MonoBehaviour {
 	public float EnergyIncrement;
 	public float Energy;
 	public float MaximumEnergy;
+
+	public int BulletsIncrement = 10;
+	public int CurrentBullets = 10;
+	public int MaximumBullets = 10;
+
+	private void Awake()
+	{
+		_instance = this;
+	}
 
 	public float ShieldActivationEnergy = 20;
 	public bool ShieldIsActivated;
@@ -44,5 +51,12 @@ public class GameGod : MonoBehaviour {
 	{
 		ShieldIsActivated = false;
 		Updated();
+	}
+	
+	public void AddBullets()
+	{
+		CurrentBullets += BulletsIncrement;
+		if (CurrentBullets > MaximumBullets)
+			CurrentBullets = MaximumBullets;
 	}
 }

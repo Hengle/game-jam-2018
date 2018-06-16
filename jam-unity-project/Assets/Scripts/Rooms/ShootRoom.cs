@@ -20,8 +20,15 @@ public class ShootRoom : BaseRoom
       CurrentPlayer = player;
       CurrentPlayer.CanControll = false;
     }
-    else
+    else if (player.HaveAmmo)
     {
+      GameGod.Instance.CurrentBullets = GameGod.Instance.MaximumBullets;
+      player.DropAmmo();
+    }
+    
+    if(GameGod.Instance.CurrentBullets > 0)
+    {
+      GameGod.Instance.CurrentBullets--;
       Done_PlayerController.Instance.Shoot();
     }
   }

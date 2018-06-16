@@ -99,9 +99,54 @@ public class Player : MonoBehaviour
 	[SerializeField] private float _speed = 5;
 	[SerializeField] private PlayerIndex _playerIndex;
 
+	[SerializeField] private GameObject _ammo;
+	[SerializeField] private GameObject _repairKey;
+	
+	public bool HaveAmmo
+	{
+		get { return _ammo.activeInHierarchy; }
+	}
+
+	public bool HaveRepairKey
+	{
+		get { return _repairKey != null && _repairKey.activeInHierarchy; }
+	}
+
 	private BaseRoom _currentRoom;
 	private const float UseRate = 0.5f;
 	private float _nextUse;
+
+	public void SetAmmo()
+	{
+		if (HaveRepairKey)
+		{
+			Debug.Log("repair key is active!");
+			return;
+		}
+
+		_ammo.SetActive(true);
+	}
+
+	public void DropAmmo()
+	{
+		_ammo.SetActive(false);
+	}
+
+	public void SetRapairKey()
+	{
+		if (HaveAmmo)
+		{
+			Debug.Log("ammo key is active!");
+			return;
+		}
+
+		_repairKey.SetActive(true);		
+	}
+
+	public void DropRepairKey()
+	{
+		_repairKey.SetActive(false);
+	}
 
 	private void FixedUpdate()
 	{
