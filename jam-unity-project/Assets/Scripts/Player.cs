@@ -112,9 +112,24 @@ public class Player : MonoBehaviour
 		get { return _repairKey != null && _repairKey.activeInHierarchy; }
 	}
 
+	public int RepairKeyHealth
+	{
+		get { return _repairKeyHealth; }
+		set 
+		{ 
+			_repairKeyHealth = value;
+			
+			if (_repairKeyHealth == 0)
+				DropRepairKey();
+		}
+	}
+
+	public int RepairKeyMaxHealth = 1;
+
 	private BaseRoom _currentRoom;
 	private const float UseRate = 0.5f;
 	private float _nextUse;
+	private int _repairKeyHealth;
 
 	public void SetAmmo()
 	{
@@ -134,6 +149,8 @@ public class Player : MonoBehaviour
 
 	public void SetRapairKey()
 	{
+		RepairKeyHealth = RepairKeyMaxHealth;
+		
 		if (HaveAmmo)
 		{
 			Debug.Log("ammo key is active!");
@@ -146,6 +163,12 @@ public class Player : MonoBehaviour
 	public void DropRepairKey()
 	{
 		_repairKey.SetActive(false);
+	}
+
+	private void Start()
+	{
+		DropAmmo();
+		DropRepairKey();
 	}
 
 	private void FixedUpdate()
@@ -178,6 +201,9 @@ public class Player : MonoBehaviour
 		{
 			if (_currentRoom != null)
 				_currentRoom.Cansel(this);
+			
+			DropAmmo();
+			DropRepairKey();
 		}
 		
 		if(!CanControll)

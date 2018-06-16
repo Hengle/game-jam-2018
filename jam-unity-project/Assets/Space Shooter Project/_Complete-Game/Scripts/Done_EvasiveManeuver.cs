@@ -11,12 +11,12 @@ public class Done_EvasiveManeuver : MonoBehaviour
 	public Vector2 maneuverTime;
 	public Vector2 maneuverWait;
 
-	private float currentSpeed;
+//	private float currentSpeed;
 	private float targetManeuver;
 
 	void Start ()
 	{
-		currentSpeed = GetComponent<Rigidbody>().velocity.z;
+//		currentSpeed = GetComponent<Rigidbody>().velocity.z;
 		StartCoroutine(Evade());
 	}
 	
