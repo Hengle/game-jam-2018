@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Repo\game-jam-2018\jam-unity-project" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\Scripts" t="Include">
+        <e p="Spawner.cs" t="Include" />
+      </e>
+      <e p="jam-unity-project.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="C:\Users\mikha\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_jam-unity-project.894283522.00" t="ExcludeRecursive" />
+  </component>
+</project>
