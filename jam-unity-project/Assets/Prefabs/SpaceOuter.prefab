@@ -1447,7 +1447,6 @@ MonoBehaviour:
   spawnWait: 5
   startWait: 2
   waveWait: 10
-  scoreText: {fileID: 0}
 --- !u!114 &114600173118019064
 MonoBehaviour:
   m_ObjectHideFlags: 1

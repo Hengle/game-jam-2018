@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class Done_GameController : MonoBehaviour
@@ -12,20 +13,15 @@ public class Done_GameController : MonoBehaviour
     public float startWait;
     public float waveWait;
 
-    public Text scoreText;
-    //public Text restartText;
-    //public Text gameOverText;
-
     private bool gameOver;
     private bool restart;
     private int score;
-
+    
     void Start()
     {
         gameOver = false;
         restart = false;
-        //restartText.text = "";
-        //gameOverText.text = "";
+        
         score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
@@ -42,26 +38,31 @@ public class Done_GameController : MonoBehaviour
         }
     }
 
+    IEnumerator HightProgression()
+    {
+        spawnWait -= 0.2f;
+        yield return new WaitForSeconds(1);
+    }
+
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
         while (true)
         {
-            for (int i = 0; i < hazardCount; i++)
+            for (var i = 0; i < hazardCount; i++)
             {
-                GameObject hazard = hazards[Random.Range(0, hazards.Length)];
-                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-                //Quaternion spawnRotation = Quaternion.identity;
-                var asd = Instantiate(hazard, transform);//, spawnRotation);
+                var hazard = hazards[Random.Range(0, hazards.Length)];
+                var spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                
+                var asd = Instantiate(hazard, transform);
                 asd.transform.localPosition = spawnPosition;
-                //asd.transform.rotation = hazard.transform.rotation;
+                
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
 
             if (gameOver)
             {
-                //restartText.text = "Press 'R' for Restart";
                 restart = true;
                 break;
             }
