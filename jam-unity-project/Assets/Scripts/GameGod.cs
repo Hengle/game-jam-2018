@@ -63,7 +63,7 @@ public class GameGod : MonoBehaviour
     }
 
     if (ScoreText != null)
-      ScoreText.text = CurrentPoints.ToString();
+      ScoreText.text = "SCORE: " + CurrentPoints;
   }
 
   private void Awake()

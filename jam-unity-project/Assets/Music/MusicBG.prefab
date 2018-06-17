@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4439279502152166}
   - component: {fileID: 114112090363847424}
   - component: {fileID: 82141366429955468}
+  - component: {fileID: 320805607803816746}
+  - component: {fileID: 95140054978426250}
+  - component: {fileID: 114445226382660354}
   m_Layer: 0
   m_Name: MusicBG
   m_TagString: Untagged
@@ -35,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781216958859568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 137.86568, y: 23.719873, z: 7.7509193}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.32, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -55,7 +58,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -122,6 +125,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!95 &95140054978426250
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781216958859568}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114112090363847424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,3 +153,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e892f7cad8a061c41b5b56ee94c476df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114445226382660354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781216958859568}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e80a1c4320d8144e8269753a7b4e053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioMixer: {fileID: 24100000, guid: 8cd1a3836a841cd408ebf0dee7b092ee, type: 2}
+--- !u!320 &320805607803816746
+PlayableDirector:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781216958859568}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 21e55875feca9b449ab160c2b1898c48, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114726447877073870, guid: 21e55875feca9b449ab160c2b1898c48, type: 2}
+    value: {fileID: 1781216958859568}
+  m_ExposedReferences:
+    m_References: []
