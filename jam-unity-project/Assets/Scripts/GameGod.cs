@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using EZCameraShake;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
@@ -68,7 +69,8 @@ public class GameGod : MonoBehaviour
   {
     CurrentPoints = 0;
     _instance = this;
-
+    
+    
     DontDestroyOnLoad(gameObject);
   }
 
@@ -144,26 +146,42 @@ public class GameGod : MonoBehaviour
     _started = true;
     StartCoroutine(WaitAndLoad());
   }
+  
+  public float Magnitude = 2f;
+  public float Roughness = 10f;
+  public float FadeOutTime = 2f;
 
   private IEnumerator WaitAndLoad()
   {
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var parentF = GameObject.Find("Camera Inside").transform.parent.transform;
     Instantiate(ExploAll, parentF);
     
     var player = GameObject.FindGameObjectWithTag("Player");
-    yield return new WaitForSeconds(0.4f);
+    yield return new WaitForSeconds(1f);
     var obj1 = Instantiate(Explo, player.transform);
     obj1.transform.localPosition = Vector3.zero;
 
-    yield return new WaitForSeconds(0.4f);
+    yield return new WaitForSeconds(0.8f);
     var obj2 = Instantiate(Explo, player.transform);
     obj2.transform.localPosition = Vector3.zero;
-    yield return new WaitForSeconds(0.4f);
+    yield return new WaitForSeconds(0.8f);
     var obj3 = Instantiate(Explo, player.transform);
     obj3.transform.localPosition = Vector3.zero;
-    yield return new WaitForSeconds(0.4f);
+    yield return new WaitForSeconds(0.8f);
     var obj4 = Instantiate(Explo, player.transform);
     obj4.transform.localPosition = Vector3.zero;
+    yield return new WaitForSeconds(0.8f);
+    var obj5 = Instantiate(Explo, player.transform);
+    obj5.transform.localPosition = Vector3.zero;
+    
+    yield return new WaitForSeconds(0.8f);
+    var obj6 = Instantiate(Explo, player.transform);
+    obj6.transform.localPosition = Vector3.zero;
+    
+    yield return new WaitForSeconds(0.8f);
+    var obj7 = Instantiate(Explo, player.transform);
+    obj7.transform.localPosition = Vector3.zero;
 
     var pl = GameObject.FindGameObjectWithTag("Player");
 

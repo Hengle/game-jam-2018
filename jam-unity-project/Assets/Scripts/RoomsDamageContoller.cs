@@ -61,6 +61,8 @@ public class RoomsDamageContoller : MonoBehaviour
 
   private BaseRoom GetRandomRoom()
   {
+    GameGod.Instance.GameOver();
+
     //SceneManager.LoadScene("ScoreScreen");
     var index = Random.Range(0, _rooms.Count);
     var room = _rooms[index];
