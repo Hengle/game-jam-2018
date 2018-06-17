@@ -9,10 +9,7 @@ public class AnyButtonPress : MonoBehaviour
 {
     public PlayableDirector Pd;
 
-    // Use this for initialization
-    private void Start()
-    {
-    }
+    private bool _started;
 
     // Update is called once per frame
     private void Update()
@@ -23,8 +20,14 @@ public class AnyButtonPress : MonoBehaviour
             || GamePad.GetButtonDown(GamePad.Button.Y, GamePad.Index.Any)
             || Input.anyKeyDown)
         {
+            GetComponent<AudioSource>().Play();
             Pd.Play();
-            StartCoroutine(Load());
+            if (!_started)
+            {
+                _started = true;
+                StartCoroutine(Load());
+            }
+            
         }
     }
 

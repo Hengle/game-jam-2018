@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class Done_Boundary
@@ -28,6 +29,8 @@ public class Done_PlayerController : MonoBehaviour
 
   private float nextFire;
 
+  public List<AudioClip> Clips;
+
   public void Awake()
   {
     _instance = this;
@@ -41,6 +44,11 @@ public class Done_PlayerController : MonoBehaviour
       var obj = Instantiate(shot, shotSpawn);
       obj.transform.Rotate(shotSpawn.forward);
       //GetComponent<AudioSource>().Play();
+      
+      var randNum = new System.Random().Next(0, Clips.Count);
+      var audioSource = GetComponent<AudioSource>();
+      audioSource.clip = Clips[randNum];
+      audioSource.Play();
     }
   }
 

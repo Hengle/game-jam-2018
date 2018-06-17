@@ -196,7 +196,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.75
-  m_Pitch: 1
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -279,6 +279,11 @@ MonoBehaviour:
   shotSpawn: {fileID: 400006}
   fireRate: 3
   delay: 0.5
+  Clips:
+  - {fileID: 8300000, guid: 729b85a39b4aec148bb3d026eae0d4cc, type: 3}
+  - {fileID: 8300000, guid: 4a5443d7a5d9f7446abf92d414d87e2c, type: 3}
+  - {fileID: 8300000, guid: 40c8193b5e9b0b649ad0df9fd709c82c, type: 3}
+  - {fileID: 8300000, guid: b0601f9df2c53364a86a08acf40b6ab9, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

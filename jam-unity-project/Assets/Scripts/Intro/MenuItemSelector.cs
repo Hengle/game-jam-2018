@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class MenuItemSelector : MonoBehaviour
 {
+    public AudioClip MenuChanged;
+    public AudioClip MenuSelected;
+    
     public Vector3 P1;
     public Vector3 P2;
     public Vector3 P3;
@@ -83,6 +86,7 @@ public class MenuItemSelector : MonoBehaviour
 
             if (_changed)
             {
+                PlayMenuItemChangeSound();
                 _changed = false;
                 if (_previousValue > 0)
                 {
@@ -113,7 +117,24 @@ public class MenuItemSelector : MonoBehaviour
             _locked = true;
             BlinkFaster();
             StartCoroutine(LoadNextLevel());
+            PlaySelected();
         }
+    }
+
+    private void PlaySelected()
+    {
+        var audio  = GetComponent<AudioSource>();
+        audio.Stop();
+        audio.clip = MenuSelected;
+        audio.Play();
+    }
+
+    private void PlayMenuItemChangeSound()
+    {
+        var audio  = GetComponent<AudioSource>();
+        audio.Stop();
+        audio.clip = MenuChanged;
+        audio.Play();
     }
 
     private bool _locked;
