@@ -81,9 +81,9 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Opacity: -3.15
+    - _Opacity: -0.12
     - _Parallax: 0.02
-    - _PowerRim: 1.82
+    - _PowerRim: 0.7
     - _ScaleNormal: 0
     - _Smoothness: 2
     - _SmoothnessTextureChannel: 0
@@ -92,10 +92,10 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
-    - _scaleRim: 1.16
+    - _scaleRim: 0.33
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color0: {r: 0.97794116, g: 0.6375462, b: 0.028763002, a: 0}
+    - _Color0: {r: 1, g: 0.64137924, b: 0, a: 0}
     - _Color1: {r: 0, g: 0.6275859, b: 1, a: 0}
     - _ColorAlbedo: {r: 0.9485294, g: 0.76671195, b: 0.0069744876, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
