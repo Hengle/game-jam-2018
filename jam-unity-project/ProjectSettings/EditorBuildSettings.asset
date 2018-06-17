@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SplitScreenScene.unity
     guid: 0dbd32c757250bb4e86f3d1ce7becf2c
+  - enabled: 1
+    path: Assets/Scenes/ScoreScreen.unity
+    guid: a8ce74120bda1b343b3c449294e97c03

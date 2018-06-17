@@ -3,6 +3,7 @@ using System.Linq;
 using EZCameraShake;
 using Rooms;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoomsDamageContoller : MonoBehaviour
 {
@@ -60,6 +61,7 @@ public class RoomsDamageContoller : MonoBehaviour
 
   private BaseRoom GetRandomRoom()
   {
+    SceneManager.LoadScene("ScoreScreen");
     var index = Random.Range(0, _rooms.Count);
     var room = _rooms[index];
 
@@ -73,6 +75,7 @@ public class RoomsDamageContoller : MonoBehaviour
     if (!enyWorking)
     {
       Debug.Log("Ship is destroyed");
+      SceneManager.LoadScene("ScoreScreen");
       return null;
     }
     

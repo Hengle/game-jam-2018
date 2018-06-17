@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Timeline;
+using UnityEngine.UI;
 
 public class GameGod : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class GameGod : MonoBehaviour
 
   public int CurrentPoints = 0;
 
+  public Text ScoreText;
+
   private bool _canPlaySound;
 
   public void Update()
@@ -50,6 +53,8 @@ public class GameGod : MonoBehaviour
       _canPlaySound = false;
       EnergySound.Play();
     }
+
+    ScoreText.text = CurrentPoints.ToString();
   }
 
   private void Awake()
