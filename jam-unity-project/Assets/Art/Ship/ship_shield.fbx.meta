@@ -8,16 +8,31 @@ ModelImporter:
     100000: //RootNode
     100002: ship_shield_control
     100004: ship_shiled_bottom
+    100006: ship_shield_handle
+    100008: ship_shield_shield
+    100010: ship_shield_wires
     400000: //RootNode
     400002: ship_shield_control
     400004: ship_shiled_bottom
+    400006: ship_shield_handle
+    400008: ship_shield_shield
+    400010: ship_shield_wires
     2100000: lambert1
     2300000: ship_shield_control
     2300002: ship_shiled_bottom
+    2300004: ship_shield_handle
+    2300006: ship_shield_shield
+    2300008: ship_shield_wires
     3300000: ship_shield_control
     3300002: ship_shiled_bottom
+    3300004: ship_shield_handle
+    3300006: ship_shield_shield
+    3300008: ship_shield_wires
     4300000: ship_shield_control
     4300002: ship_shiled_bottom
+    4300004: ship_shield_handle
+    4300006: ship_shield_shield
+    4300008: ship_shield_wires
   externalObjects: {}
   materials:
     importMaterials: 0

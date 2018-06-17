@@ -13,6 +13,7 @@ ModelImporter:
     100010: ship_firePoint_LED
     100012: ship_firePoint_shelf
     100014: ship_firePoint_wires1
+    100016: ship_firePoint_shelf1
     400000: //RootNode
     400002: ship_firePoint_battery
     400004: ship_firePoint_battery1
@@ -21,6 +22,7 @@ ModelImporter:
     400010: ship_firePoint_LED
     400012: ship_firePoint_shelf
     400014: ship_firePoint_wires1
+    400016: ship_firePoint_shelf1
     2100000: Atlas8
     2100002: LED2
     2100004: Atlas9
@@ -37,6 +39,7 @@ ModelImporter:
     2300008: ship_firePoint_LED
     2300010: ship_firePoint_shelf
     2300012: ship_firePoint_wires1
+    2300014: ship_firePoint_shelf1
     3300000: ship_firePoint_battery
     3300002: ship_firePoint_battery1
     3300004: ship_firePoint_control
@@ -44,6 +47,7 @@ ModelImporter:
     3300008: ship_firePoint_LED
     3300010: ship_firePoint_shelf
     3300012: ship_firePoint_wires1
+    3300014: ship_firePoint_shelf1
     4300000: ship_firePoint_LED
     4300002: ship_firePoint_battery1
     4300004: ship_firePoint_battery
@@ -51,6 +55,7 @@ ModelImporter:
     4300008: ship_firePoint_controlBottom
     4300010: ship_firePoint_shelf
     4300012: ship_firePoint_wires1
+    4300014: ship_firePoint_shelf1
   externalObjects: {}
   materials:
     importMaterials: 0
