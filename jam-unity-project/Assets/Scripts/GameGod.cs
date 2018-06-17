@@ -9,7 +9,11 @@ public class GameGod : MonoBehaviour {
 	{
 		get { return _instance; }
 	}
-	
+
+	public int RepaireKeyPower = 3;
+
+	public int RepaireKeyDecrement = 9;
+
 	public event Action Updated = delegate {  };
 
 	public float NavigationEnergyConsumption = 3;

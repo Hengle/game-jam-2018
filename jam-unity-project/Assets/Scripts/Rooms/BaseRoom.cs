@@ -5,8 +5,8 @@ namespace Rooms
 {
   public abstract class BaseRoom : MonoBehaviour
   {
-    public int CurrentHealth = 1;
-    public int MaxHealth = 10;
+    public int CurrentHealth = 9;
+    public int MaxHealth = 9;
 
     [SerializeField] private GameObject _damaged;
     [SerializeField] private ControllHelperKey[] _inactiveKeys;
@@ -30,8 +30,8 @@ namespace Rooms
     {
       if (player.HaveRepairKey && CurrentHealth == 0)
       {
-        CurrentHealth = MaxHealth;
-        player.RepairKeyHealth = 0;
+        CurrentHealth += GameGod.Instance.RepaireKeyPower;
+        player.RepairKeyHealth -= GameGod.Instance.RepaireKeyDecrement;
         
         if (CurrentHealth > MaxHealth)
           CurrentHealth = MaxHealth;
