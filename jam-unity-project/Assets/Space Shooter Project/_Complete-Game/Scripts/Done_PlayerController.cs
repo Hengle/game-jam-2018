@@ -95,8 +95,13 @@ public class Done_PlayerController : MonoBehaviour
     transform.localPosition = pos;
   }
 
+  public bool IsDead = false;
+
   public void MoveHorizontal(float directionAndPower)
   {
+    if (IsDead)
+      return;
+    
     var rigid = GetComponent<Rigidbody>();
     Vector3 movement = new Vector3(directionAndPower, 0.0f, rigid.velocity.z);
     rigid.velocity = movement * speed;
@@ -104,6 +109,9 @@ public class Done_PlayerController : MonoBehaviour
 
   public void MoveVertical(float directionAndPower)
   {
+    if (IsDead)
+      return;
+    
     var rigid = GetComponent<Rigidbody>();
     Vector3 movement = new Vector3(rigid.velocity.x, directionAndPower, 0);
     rigid.velocity = movement * speed;

@@ -29,7 +29,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1092881007934042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1312,7 @@ MonoBehaviour:
   fireRate: 0.25
   Clips:
   - {fileID: 8300000, guid: 4505cc1cc6dbfae4c89d61daef8fbd5e, type: 3}
+  IsDead: 0
 --- !u!114 &114342169297781730
 MonoBehaviour:
   m_ObjectHideFlags: 1

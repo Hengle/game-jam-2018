@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
   private void Awake()
   {
     if (_stab != null)
-      _stab.SetActive(false);
+      Destroy(_stab);
 
     if (_instance == null)
       throw new NullReferenceException("[Spawner] You need to set instance to spawn");

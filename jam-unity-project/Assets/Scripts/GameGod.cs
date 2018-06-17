@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
@@ -37,6 +38,9 @@ public class GameGod : MonoBehaviour
 
   public AudioClip ShieldActivatedTrack;
 
+  public GameObject Explo;
+  public GameObject ExploAll;
+
   public int CurrentPoints = 0;
 
   public Text ScoreText;
@@ -56,8 +60,8 @@ public class GameGod : MonoBehaviour
       EnergySound.Play();
     }
 
-    if(ScoreText != null)
-    ScoreText.text = CurrentPoints.ToString();
+    if (ScoreText != null)
+      ScoreText.text = CurrentPoints.ToString();
   }
 
   private void Awake()
@@ -82,8 +86,8 @@ public class GameGod : MonoBehaviour
 
   public void ActivateShield()
   {
-		if (ShieldIsActivated)
-			return;
+    if (ShieldIsActivated)
+      return;
 
     if (Energy > ShieldActivationEnergy)
     {
@@ -123,22 +127,51 @@ public class GameGod : MonoBehaviour
   {
     switch (roomNum)
     {
-        case 0:
-          NavigationRoomActivated.Play();
-          break;
+      case 0:
+        NavigationRoomActivated.Play();
+        break;
     }
   }
 
+  private bool _started = false;
+
   public void GameOver()
   {
-    Destroy(GameObject.FindGameObjectWithTag("Player"));
+    //Destroy(GameObject.FindGameObjectWithTag("Player"));
+    if (_started)
+      return;
+
+    _started = true;
     StartCoroutine(WaitAndLoad());
   }
 
   private IEnumerator WaitAndLoad()
   {
-    yield return new WaitForSeconds(3);
+    var parentF = GameObject.Find("Camera Inside").transform.parent.transform;
+    Instantiate(ExploAll, parentF);
     
+    var player = GameObject.FindGameObjectWithTag("Player");
+    yield return new WaitForSeconds(0.4f);
+    var obj1 = Instantiate(Explo, player.transform);
+    obj1.transform.localPosition = Vector3.zero;
+
+    yield return new WaitForSeconds(0.4f);
+    var obj2 = Instantiate(Explo, player.transform);
+    obj2.transform.localPosition = Vector3.zero;
+    yield return new WaitForSeconds(0.4f);
+    var obj3 = Instantiate(Explo, player.transform);
+    obj3.transform.localPosition = Vector3.zero;
+    yield return new WaitForSeconds(0.4f);
+    var obj4 = Instantiate(Explo, player.transform);
+    obj4.transform.localPosition = Vector3.zero;
+
+    var pl = GameObject.FindGameObjectWithTag("Player");
+
+    pl.GetComponent<Done_PlayerController>().IsDead = true;
+    pl.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    
+    yield return new WaitForSeconds(1);
+
     SceneManager.LoadScene("ScoreScreen");
   }
 }
