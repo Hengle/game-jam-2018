@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mat_player_04
+  m_Name: mat_player_01
   m_Shader: {fileID: 4800000, guid: d9ba000df77fdea4793e9b70d8048f92, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -91,7 +91,7 @@ Material:
     - _BaseCellOffset: 0
     - _BaseCellSharpness: 0.01
     - _BumpScale: 1
-    - _Contrast: 0.67
+    - _Contrast: -1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -130,16 +130,16 @@ Material:
     - _TessValue: 4
     - _UVSec: 0
     - _ZWrite: 1
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
-    - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _ASEOutlineColor: {r: 1, g: 1, b: 1, a: 0}
     - _BaseTint: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HighlightTint: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineTint: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 0}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0}
-    - _TintBody: {r: 0.05497927, g: 0.1102941, b: 0.01703071, a: 0}
+    - _TintBody: {r: 0.032956436, g: 0.9191176, b: 0, a: 0}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _TintHead: {r: 0.03397562, g: 0.9852941, b: 0, a: 0}
+    - _TintHead: {r: 0.119205594, g: 0.8455882, b: 0.093263395, a: 0}
     - _Vector0: {r: -0.15, g: 0.92, b: 0, a: 0}
