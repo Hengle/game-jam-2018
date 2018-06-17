@@ -20045,6 +20045,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4310a7c708a5814a830f78d53d52d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lights:
+  - {fileID: 1078325902242838}
+  - {fileID: 1355869870414570}
+  - {fileID: 1352712567240408}
+  - {fileID: 1519271236072506}
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1010951545815330}
@@ -20105,6 +20110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52593b4fcf6aa3f49b3d2447a845d017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lights:
+  - {fileID: 1280336868120898}
+  - {fileID: 1292543477996432}
+  - {fileID: 1310651069217388}
+  - {fileID: 1963904265673214}
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1776382647571404}
@@ -20122,6 +20132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c7ec14a289b7f4bb4d5fd280a476e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lights:
+  - {fileID: 1263778293728876}
+  - {fileID: 1781984102575102}
+  - {fileID: 1623722685728390}
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1260964113897396}
@@ -20248,6 +20262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138dc6f5bf0c4c248adc311e58132c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lights: []
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1348218628354258}
@@ -20536,6 +20551,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad57cce814e36f45bfeb776e3e6097e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lights:
+  - {fileID: 1540869504934114}
+  - {fileID: 1168974633404412}
+  - {fileID: 1721205802955728}
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1523164664861756}
@@ -20572,6 +20591,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b45d1571aec50348b4418853a330b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Lights:
+  - {fileID: 1600285532930132}
+  - {fileID: 1415255103146880}
+  - {fileID: 1941647911370824}
+  - {fileID: 1197714508789362}
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1458882508568382}

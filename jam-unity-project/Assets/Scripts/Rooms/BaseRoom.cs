@@ -1,10 +1,13 @@
-﻿using ControllHelpers;
+﻿using System.Collections.Generic;
+using ControllHelpers;
 using UnityEngine;
 
 namespace Rooms
 {
   public abstract class BaseRoom : MonoBehaviour
   {
+    public List<GameObject> Lights;
+    
     public int CurrentHealth = 9;
     public int MaxHealth = 9;
 
@@ -63,6 +66,25 @@ namespace Rooms
     private void Update()
     {
       _damaged.SetActive(CurrentHealth < MaxHealth);
+
+      if (Lights == null)
+        return;
+
+      var damaged = CurrentHealth == 0;
+      if (damaged)
+      {
+        foreach (var o in Lights)
+        {
+          o.SetActive(false);
+        }
+      }
+      else
+      {
+        foreach (var o in Lights)
+        {
+          o.SetActive(true);
+        }
+      }
     }
   }
 }
