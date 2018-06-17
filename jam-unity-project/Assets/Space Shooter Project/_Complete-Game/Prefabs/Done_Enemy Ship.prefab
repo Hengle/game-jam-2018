@@ -34,6 +34,7 @@ GameObject:
   - component: {fileID: 8200000}
   - component: {fileID: 114532565840605464}
   - component: {fileID: 114161988500217278}
+  - component: {fileID: 114119795874862824}
   m_Layer: 0
   m_Name: Done_Enemy Ship
   m_TagString: Enemy
@@ -281,10 +282,10 @@ MonoBehaviour:
   fireRate: 3
   delay: 0.5
   Clips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 729b85a39b4aec148bb3d026eae0d4cc, type: 3}
+  - {fileID: 8300000, guid: 4a5443d7a5d9f7446abf92d414d87e2c, type: 3}
+  - {fileID: 8300000, guid: 40c8193b5e9b0b649ad0df9fd709c82c, type: 3}
+  - {fileID: 8300000, guid: b0601f9df2c53364a86a08acf40b6ab9, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7850f24249e4056b2189de03ae584c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -2
+  speed: -1
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3736,6 +3737,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
+--- !u!114 &114119795874862824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ceb2936442f8be46afebedb2518618a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114161988500217278
 MonoBehaviour:
   m_ObjectHideFlags: 1

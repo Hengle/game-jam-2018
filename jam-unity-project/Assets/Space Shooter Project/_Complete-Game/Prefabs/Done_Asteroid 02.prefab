@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 11400002}
   - component: {fileID: 11400006}
+  - component: {fileID: 114412638629655608}
   m_Layer: 0
   m_Name: Done_Asteroid 02
   m_TagString: Enemy
@@ -186,3 +187,14 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
+--- !u!114 &114412638629655608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ceb2936442f8be46afebedb2518618a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -25,6 +25,7 @@ public class Done_GameController : MonoBehaviour
         score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
+        StartCoroutine(HightProgression());
     }
 
     void Update()
@@ -40,7 +41,7 @@ public class Done_GameController : MonoBehaviour
 
     IEnumerator HightProgression()
     {
-        spawnWait -= 0.2f;
+        spawnWait -= 2f;
         yield return new WaitForSeconds(1);
     }
 
