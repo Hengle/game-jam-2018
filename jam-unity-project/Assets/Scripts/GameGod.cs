@@ -74,8 +74,8 @@ public class GameGod : MonoBehaviour
 
   public void ActivateShield()
   {
-//		if (ShieldIsActivated)
-//			return;
+		if (ShieldIsActivated)
+			return;
 
     if (Energy > ShieldActivationEnergy)
     {
