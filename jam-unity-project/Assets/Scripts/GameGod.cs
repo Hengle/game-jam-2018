@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 
@@ -54,6 +56,7 @@ public class GameGod : MonoBehaviour
       EnergySound.Play();
     }
 
+    if(ScoreText != null)
     ScoreText.text = CurrentPoints.ToString();
   }
 
@@ -124,5 +127,18 @@ public class GameGod : MonoBehaviour
           NavigationRoomActivated.Play();
           break;
     }
+  }
+
+  public void GameOver()
+  {
+    Destroy(GameObject.FindGameObjectWithTag("Player"));
+    StartCoroutine(WaitAndLoad());
+  }
+
+  private IEnumerator WaitAndLoad()
+  {
+    yield return new WaitForSeconds(3);
+    
+    SceneManager.LoadScene("ScoreScreen");
   }
 }
