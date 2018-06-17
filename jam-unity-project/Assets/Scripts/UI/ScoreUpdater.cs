@@ -18,6 +18,9 @@ public class ScoreUpdater : MonoBehaviour
     var go = GameObject.Find("MusicBG");
     if (go != null)
       go.GetComponent<PlayableDirector>().Play();
+    
+    
+    GameObject.Find("Siren_2").GetComponent<AudioSource>().Stop();
   }
 
 

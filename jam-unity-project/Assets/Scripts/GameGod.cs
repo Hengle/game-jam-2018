@@ -137,7 +137,7 @@ public class GameGod : MonoBehaviour
     }
   }
 
-  private bool _started = false;
+  public bool _started = false;
 
   public void GameOver()
   {

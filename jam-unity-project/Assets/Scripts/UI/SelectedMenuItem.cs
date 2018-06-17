@@ -45,6 +45,7 @@ public class SelectedMenuItem : MonoBehaviour
     {
         IsBlinking = false;
         StopCoroutine("ChangeColor");
+        if(_text)
         _text.color = DefaultColor;
     }
 
