@@ -36,6 +36,7 @@ public class GameGod : MonoBehaviour
   public AudioSource EnergySound;
   public AudioSource DeniedSource;
   public AudioSource NavigationRoomActivated;
+  public AudioSource Replenish;
 
   public AudioClip ShieldActivatedTrack;
 
@@ -82,6 +83,7 @@ public class GameGod : MonoBehaviour
     Energy += EnergyIncrement;
     if (Energy > MaximumEnergy)
     {
+      Replenish.Play();
       Energy = MaximumEnergy;
     }
   }
@@ -149,7 +151,7 @@ public class GameGod : MonoBehaviour
   
   public float Magnitude = 2f;
   public float Roughness = 10f;
-  public float FadeOutTime = 2f;
+  public float FadeOutTime = 1f;
 
   private IEnumerator WaitAndLoad()
   {
@@ -163,23 +165,29 @@ public class GameGod : MonoBehaviour
     obj1.transform.localPosition = Vector3.zero;
 
     yield return new WaitForSeconds(0.8f);
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj2 = Instantiate(Explo, player.transform);
     obj2.transform.localPosition = Vector3.zero;
     yield return new WaitForSeconds(0.8f);
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj3 = Instantiate(Explo, player.transform);
     obj3.transform.localPosition = Vector3.zero;
     yield return new WaitForSeconds(0.8f);
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj4 = Instantiate(Explo, player.transform);
     obj4.transform.localPosition = Vector3.zero;
     yield return new WaitForSeconds(0.8f);
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj5 = Instantiate(Explo, player.transform);
     obj5.transform.localPosition = Vector3.zero;
     
     yield return new WaitForSeconds(0.8f);
     var obj6 = Instantiate(Explo, player.transform);
     obj6.transform.localPosition = Vector3.zero;
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     
     yield return new WaitForSeconds(0.8f);
+    CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj7 = Instantiate(Explo, player.transform);
     obj7.transform.localPosition = Vector3.zero;
 

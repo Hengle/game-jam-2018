@@ -84,4 +84,22 @@ public class RoomsDamageContoller : MonoBehaviour
     
     return _rooms[index];
   }
+
+  public AudioSource Sirena;
+
+  public void Update()
+  {
+    Sirena.loop = true;
+    
+    var anyRoomIsDamaged = _rooms.Any(r => r.CurrentHealth == 0);
+    if (anyRoomIsDamaged && !Sirena.isPlaying)
+    {
+      Sirena.Play();
+    }
+
+    if (!anyRoomIsDamaged && Sirena.isPlaying)
+    {
+      Sirena.Stop();
+    }
+  }
 }
