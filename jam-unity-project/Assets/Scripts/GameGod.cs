@@ -155,6 +155,8 @@ public class GameGod : MonoBehaviour
 
   private IEnumerator WaitAndLoad()
   {
+    Done_PlayerController.Instance.IsDead = true;
+    
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var parentF = GameObject.Find("Camera Inside").transform.parent.transform;
     Instantiate(ExploAll, parentF);
@@ -191,12 +193,11 @@ public class GameGod : MonoBehaviour
     var obj7 = Instantiate(Explo, player.transform);
     obj7.transform.localPosition = Vector3.zero;
 
-    var pl = GameObject.FindGameObjectWithTag("Player");
 
-    pl.GetComponent<Done_PlayerController>().IsDead = true;
-    pl.GetComponent<Rigidbody>().velocity = Vector3.zero;
     
-    yield return new WaitForSeconds(1);
+    Done_PlayerController.Instance.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    
+    //yield return new WaitForSeconds(3);
 
     SceneManager.LoadScene("ScoreScreen");
   }
