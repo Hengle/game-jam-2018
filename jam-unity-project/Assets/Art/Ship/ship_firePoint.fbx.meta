@@ -53,7 +53,7 @@ ModelImporter:
     4300012: ship_firePoint_wires1
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

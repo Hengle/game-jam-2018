@@ -381,7 +381,7 @@ ModelImporter:
     4300146: ship_floor81
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

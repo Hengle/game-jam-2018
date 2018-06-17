@@ -106,7 +106,7 @@ ModelImporter:
     4300034: ship_energy_energyBoardSider1
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

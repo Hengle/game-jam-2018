@@ -71,6 +71,14 @@ ModelImporter:
     100126: Base5
     100128: ship_wall_linear_024
     100130: ship_wall_linear_025
+    100132: Add6
+    100134: Add7
+    100136: Add8
+    100138: Base6
+    100140: Base7
+    100142: Base8
+    100144: ship_wall_linear_026
+    100146: ship_wall_linear_027
     400000: ship_wall_front
     400002: ship_wall_front1
     400004: ship_wall_front2
@@ -137,6 +145,14 @@ ModelImporter:
     400126: Base5
     400128: ship_wall_linear_024
     400130: ship_wall_linear_025
+    400132: Add6
+    400134: Add7
+    400136: Add8
+    400138: Base6
+    400140: Base7
+    400142: Base8
+    400144: ship_wall_linear_026
+    400146: ship_wall_linear_027
     2100000: Atlas3
     2100002: Atlas7
     2100004: Atlas20
@@ -206,6 +222,14 @@ ModelImporter:
     2300122: Base5
     2300124: ship_wall_linear_024
     2300126: ship_wall_linear_025
+    2300128: Add6
+    2300130: Add7
+    2300132: Add8
+    2300134: Base6
+    2300136: Base7
+    2300138: Base8
+    2300140: ship_wall_linear_026
+    2300142: ship_wall_linear_027
     3300000: ship_wall_front
     3300002: ship_wall_front1
     3300004: ship_wall_front2
@@ -270,6 +294,14 @@ ModelImporter:
     3300122: Base5
     3300124: ship_wall_linear_024
     3300126: ship_wall_linear_025
+    3300128: Add6
+    3300130: Add7
+    3300132: Add8
+    3300134: Base6
+    3300136: Base7
+    3300138: Base8
+    3300140: ship_wall_linear_026
+    3300142: ship_wall_linear_027
     4300000: ship_wall_round19
     4300002: ship_wall_round18
     4300004: ship_wall_round17
@@ -334,9 +366,17 @@ ModelImporter:
     4300122: Add5
     4300124: ship_wall_linear_024
     4300126: ship_wall_linear_025
+    4300128: Add6
+    4300130: Base6
+    4300132: Add7
+    4300134: Base7
+    4300136: Add8
+    4300138: Base8
+    4300140: ship_wall_linear_026
+    4300142: ship_wall_linear_027
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
