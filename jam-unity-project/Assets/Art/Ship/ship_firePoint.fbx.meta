@@ -14,6 +14,15 @@ ModelImporter:
     100012: ship_firePoint_shelf
     100014: ship_firePoint_wires1
     100016: ship_firePoint_shelf1
+    100018: ship_firePoint_shelf2
+    100020: ship_firePoint_shelf3
+    100022: ship_firePoint_wires2
+    100024: ship_firePoint_wires3
+    100026: ship_firePoint_supply1
+    100028: ship_firePoint_supply2
+    100030: ship_firePoint_supply
+    100032: transform2
+    100034: transform3
     400000: //RootNode
     400002: ship_firePoint_battery
     400004: ship_firePoint_battery1
@@ -23,6 +32,15 @@ ModelImporter:
     400012: ship_firePoint_shelf
     400014: ship_firePoint_wires1
     400016: ship_firePoint_shelf1
+    400018: ship_firePoint_shelf2
+    400020: ship_firePoint_shelf3
+    400022: ship_firePoint_wires2
+    400024: ship_firePoint_wires3
+    400026: ship_firePoint_supply1
+    400028: ship_firePoint_supply2
+    400030: ship_firePoint_supply
+    400032: transform2
+    400034: transform3
     2100000: Atlas8
     2100002: LED2
     2100004: Atlas9
@@ -40,6 +58,13 @@ ModelImporter:
     2300010: ship_firePoint_shelf
     2300012: ship_firePoint_wires1
     2300014: ship_firePoint_shelf1
+    2300016: ship_firePoint_shelf2
+    2300018: ship_firePoint_shelf3
+    2300020: ship_firePoint_wires2
+    2300022: ship_firePoint_wires3
+    2300024: ship_firePoint_supply1
+    2300026: ship_firePoint_supply2
+    2300028: ship_firePoint_supply
     3300000: ship_firePoint_battery
     3300002: ship_firePoint_battery1
     3300004: ship_firePoint_control
@@ -48,6 +73,13 @@ ModelImporter:
     3300010: ship_firePoint_shelf
     3300012: ship_firePoint_wires1
     3300014: ship_firePoint_shelf1
+    3300016: ship_firePoint_shelf2
+    3300018: ship_firePoint_shelf3
+    3300020: ship_firePoint_wires2
+    3300022: ship_firePoint_wires3
+    3300024: ship_firePoint_supply1
+    3300026: ship_firePoint_supply2
+    3300028: ship_firePoint_supply
     4300000: ship_firePoint_LED
     4300002: ship_firePoint_battery1
     4300004: ship_firePoint_battery
@@ -56,6 +88,13 @@ ModelImporter:
     4300010: ship_firePoint_shelf
     4300012: ship_firePoint_wires1
     4300014: ship_firePoint_shelf1
+    4300016: ship_firePoint_shelf2
+    4300018: ship_firePoint_shelf3
+    4300020: ship_firePoint_wires2
+    4300022: ship_firePoint_wires3
+    4300024: ship_firePoint_supply1
+    4300026: ship_firePoint_supply2
+    4300028: ship_firePoint_supply
   externalObjects: {}
   materials:
     importMaterials: 0
