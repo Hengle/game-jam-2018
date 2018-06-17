@@ -1425,7 +1425,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 4115123924824766}
   fireRate: 0.25
   Clips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4505cc1cc6dbfae4c89d61daef8fbd5e, type: 3}
 --- !u!114 &114572811292727370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1441,6 +1441,8 @@ MonoBehaviour:
   - {fileID: 100000, guid: 7d5f7699d6d1d48e485ac71126e12061, type: 2}
   - {fileID: 100002, guid: 9143e2b62ad50488482f9b73672fc331, type: 2}
   - {fileID: 100002, guid: 834bfaee90a9d4e04b1e8c1ca22cc88e, type: 2}
+  - {fileID: 100002, guid: afc18fc39ade3744397c0c993b57be53, type: 2}
+  - {fileID: 100002, guid: afc18fc39ade3744397c0c993b57be53, type: 2}
   - {fileID: 100002, guid: afc18fc39ade3744397c0c993b57be53, type: 2}
   spawnValues: {x: 5, y: 0, z: 0}
   hazardCount: 10
