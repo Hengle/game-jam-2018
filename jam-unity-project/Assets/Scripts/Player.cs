@@ -159,6 +159,13 @@ public class Player : MonoBehaviour
 		var rigid = GetComponent<Rigidbody>(); 
 		
 		rigid.velocity = movement * _speed;
+		
+		// The step size is equal to speed times frame time.
+		float step = 5 * Time.deltaTime;
+		var vector = Quaternion.AngleAxis(90, Vector3.up) * rigid.velocity;
+		Vector3 newDir = Vector3.RotateTowards(transform.forward, vector, step, 0.0f);
+		// Move our position a step closer to the target.
+		rigid.rotation = Quaternion.LookRotation(newDir);
 	}
 
 	private void OnTriggerEnter(Collider other)
