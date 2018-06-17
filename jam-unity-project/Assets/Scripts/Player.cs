@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
 	private BaseRoom _currentRoom;
 	private const float UseRate = 0.1f;
 	private float _nextUse;
-	private int _repairKeyHealth;
+	private int _repairKeyHealth = 9;
 
 	public void SetAmmo()
 	{

@@ -28,7 +28,7 @@ namespace Rooms
 
     public void Use(Player player)
     {
-      if (player.HaveRepairKey && CurrentHealth == 0)
+      if (player.HaveRepairKey && CurrentHealth < MaxHealth)
       {
         CurrentHealth += GameGod.Instance.RepaireKeyPower;
         player.RepairKeyHealth -= GameGod.Instance.RepaireKeyDecrement;
@@ -39,7 +39,7 @@ namespace Rooms
         return;
       }
 
-      if(CurrentHealth == 0)
+      if(CurrentHealth < MaxHealth)
         return;
 
       _currentPlayer = player;
@@ -62,7 +62,7 @@ namespace Rooms
 
     private void Update()
     {
-      _damaged.SetActive(CurrentHealth == 0);
+      _damaged.SetActive(CurrentHealth < MaxHealth);
     }
   }
 }
