@@ -8,18 +8,28 @@ ModelImporter:
     100000: //RootNode
     100002: ship_hall_stageCenter
     100004: ship_hall_stageRound
+    100006: ship_hall_wrenchBox
+    100008: player_wrench1
     400000: //RootNode
     400002: ship_hall_stageCenter
     400004: ship_hall_stageRound
+    400006: ship_hall_wrenchBox
+    400008: player_wrench1
     2100000: lambert1
     2100002: Atlas18
     2100004: Atlas16
     2300000: ship_hall_stageCenter
     2300002: ship_hall_stageRound
+    2300004: ship_hall_wrenchBox
+    2300006: player_wrench1
     3300000: ship_hall_stageCenter
     3300002: ship_hall_stageRound
+    3300004: ship_hall_wrenchBox
+    3300006: player_wrench1
     4300000: ship_hall_stageCenter
     4300002: ship_hall_stageRound
+    4300004: ship_hall_wrenchBox
+    4300006: player_wrench1
   externalObjects: {}
   materials:
     importMaterials: 0
