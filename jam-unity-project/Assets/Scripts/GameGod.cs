@@ -166,29 +166,29 @@ public class GameGod : MonoBehaviour
     var obj1 = Instantiate(Explo, player.transform);
     obj1.transform.localPosition = Vector3.zero;
 
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj2 = Instantiate(Explo, player.transform);
     obj2.transform.localPosition = Vector3.zero;
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj3 = Instantiate(Explo, player.transform);
     obj3.transform.localPosition = Vector3.zero;
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj4 = Instantiate(Explo, player.transform);
     obj4.transform.localPosition = Vector3.zero;
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj5 = Instantiate(Explo, player.transform);
     obj5.transform.localPosition = Vector3.zero;
     
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     var obj6 = Instantiate(Explo, player.transform);
     obj6.transform.localPosition = Vector3.zero;
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     
-    yield return new WaitForSeconds(0.8f);
+    yield return new WaitForSeconds(0.6f);
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     var obj7 = Instantiate(Explo, player.transform);
     obj7.transform.localPosition = Vector3.zero;
