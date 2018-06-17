@@ -7,12 +7,17 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: ship_shield_control
+    100004: ship_shiled_bottom
     400000: //RootNode
     400002: ship_shield_control
+    400004: ship_shiled_bottom
     2100000: lambert1
     2300000: ship_shield_control
+    2300002: ship_shiled_bottom
     3300000: ship_shield_control
+    3300002: ship_shiled_bottom
     4300000: ship_shield_control
+    4300002: ship_shiled_bottom
   externalObjects: {}
   materials:
     importMaterials: 0
