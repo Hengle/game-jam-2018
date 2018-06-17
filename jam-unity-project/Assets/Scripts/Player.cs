@@ -180,6 +180,7 @@ public class Player : MonoBehaviour
 		if(room == null)
 			return;
 
+		Cancel();
 		_currentRoom = null;
 
 		OnRoomStateChange(_currentRoom);

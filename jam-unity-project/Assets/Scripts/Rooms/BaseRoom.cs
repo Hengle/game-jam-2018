@@ -12,6 +12,8 @@ namespace Rooms
     [SerializeField] private ControllHelperKey[] _inactiveKeys;
     [SerializeField] private ControllHelperKey[] _activeKeys;
 
+    private Player _currentPlayer;
+    
     public bool IsLocked = false;
     
     public ControllHelperKey[] HelperInactiveKeys
@@ -40,6 +42,7 @@ namespace Rooms
       if(CurrentHealth == 0)
         return;
 
+      _currentPlayer = player;
       UseImpl(player);
     }
 
@@ -54,6 +57,7 @@ namespace Rooms
     public void SufferBitch()
     {
       CurrentHealth = 0;
+      Cansel(_currentPlayer);
     }
 
     private void Update()
