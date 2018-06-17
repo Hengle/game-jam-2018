@@ -29,10 +29,10 @@ public class RoomsDamageContoller : MonoBehaviour
       shieldRoom
     });
     
-    CollisionDetector.Instance.SpaceHit += InstanceOnSpaceHit;
+    CollisionDetector.Instance.PlayerSpaceHit += OnPlayerSpaceHit;
   }
 
-  private void InstanceOnSpaceHit()
+  private void OnPlayerSpaceHit()
   {
     CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, 0, FadeOutTime);
     

@@ -10,7 +10,8 @@ public class CollisionDetector : MonoBehaviour
     get { return _instance; }
   }
 
-  public event Action SpaceHit = delegate { };
+  public event Action SpaceHit = delegate { };  
+  public event Action PlayerSpaceHit = delegate { };
 
   // Use this for initialization
   void Awake()
@@ -18,9 +19,13 @@ public class CollisionDetector : MonoBehaviour
     _instance = this;
   }
 
-
-  public void Rise()
+  public void AnyHit()
   {
     SpaceHit();
+  }
+
+  public void HitOnPlayer()
+  {
+    PlayerSpaceHit();
   }
 }
