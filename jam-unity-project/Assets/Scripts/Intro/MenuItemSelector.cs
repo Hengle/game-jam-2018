@@ -31,7 +31,7 @@ public class MenuItemSelector : MonoBehaviour
 
     public void SetP1()
     {
-        transform.position = P1;
+        //transform.position = P1;
 
         P1Menu.SelectNormal();
         P2Menu.Deselect();
@@ -40,7 +40,7 @@ public class MenuItemSelector : MonoBehaviour
 
     public void SetP2()
     {
-        transform.position = P2;
+        //transform.position = P2;
 
         P1Menu.Deselect();
         P2Menu.SelectNormal();
@@ -49,7 +49,7 @@ public class MenuItemSelector : MonoBehaviour
 
     public void SetP3()
     {
-        transform.position = P3;
+        //transform.position = P3;
 
         P1Menu.Deselect();
         P2Menu.Deselect();
@@ -66,23 +66,6 @@ public class MenuItemSelector : MonoBehaviour
 
         if (!_locked)
         {
-            var dpad = GamePad.GetAxis(GamePad.Axis.Dpad, GamePad.Index.Any);
-
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-            {
-                dpad.y = -1;
-            }
-
-            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-            {
-                dpad.y = 1;
-            }
-
-            if (Math.Abs(dpad.y - _previousValue) > 0.001f)
-            {
-                _previousValue = dpad.y;
-                _changed = true;
-            }
 
             if (_changed)
             {
