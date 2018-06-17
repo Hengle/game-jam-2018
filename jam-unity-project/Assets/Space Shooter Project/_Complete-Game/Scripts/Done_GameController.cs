@@ -46,7 +46,7 @@ public class Done_GameController : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
-        yield return new WaitForSeconds(startWait);
+        yield return new WaitForSeconds(startWait * 2);
         while (true)
         {
             for (var i = 0; i < hazardCount; i++)
