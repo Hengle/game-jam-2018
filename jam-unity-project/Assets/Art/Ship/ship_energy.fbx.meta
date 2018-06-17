@@ -24,6 +24,7 @@ ModelImporter:
     100032: ship_energy_energyBoardHandler4
     100034: ship_energy_energyBoardSider
     100036: ship_energy_energyBoardSider1
+    100038: ship_energy_energyBoardSider2
     400000: //RootNode
     400002: ship_energy_batteryShelf
     400004: ship_energy_batteryShelf_02
@@ -43,6 +44,7 @@ ModelImporter:
     400032: ship_energy_energyBoardHandler4
     400034: ship_energy_energyBoardSider
     400036: ship_energy_energyBoardSider1
+    400038: ship_energy_energyBoardSider2
     2100000: Atlas1
     2100002: Atlas2
     2100004: lambert1
@@ -68,6 +70,7 @@ ModelImporter:
     2300030: ship_energy_energyBoardHandler4
     2300032: ship_energy_energyBoardSider
     2300034: ship_energy_energyBoardSider1
+    2300036: ship_energy_energyBoardSider2
     3300000: ship_energy_batteryShelf
     3300002: ship_energy_batteryShelf_02
     3300004: ship_energy_charge
@@ -86,6 +89,7 @@ ModelImporter:
     3300030: ship_energy_energyBoardHandler4
     3300032: ship_energy_energyBoardSider
     3300034: ship_energy_energyBoardSider1
+    3300036: ship_energy_energyBoardSider2
     4300000: ship_energy_generator
     4300002: ship_energy_batteryShelf
     4300004: ship_energy_batteryShelf_02
@@ -104,6 +108,7 @@ ModelImporter:
     4300030: ship_energy_energyBoardHandler4
     4300032: ship_energy_energyBoardSider
     4300034: ship_energy_energyBoardSider1
+    4300036: ship_energy_energyBoardSider2
   externalObjects: {}
   materials:
     importMaterials: 0
