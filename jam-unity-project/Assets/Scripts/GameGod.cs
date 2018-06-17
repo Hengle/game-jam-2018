@@ -22,6 +22,8 @@ public class GameGod : MonoBehaviour
 
   public event Action Updated = delegate { };
 
+  public bool ISGAMEOVER = false;
+
   public float NavigationEnergyConsumption = 3;
   public float NavigationEnergyTimeOut = 1;
 
@@ -145,6 +147,8 @@ public class GameGod : MonoBehaviour
     if (_started)
       return;
 
+    ISGAMEOVER = true;
+    
     _started = true;
     StartCoroutine(WaitAndLoad());
   }

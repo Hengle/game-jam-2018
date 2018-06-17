@@ -120,6 +120,9 @@ public class Player : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		if(GameGod.Instance.ISGAMEOVER)
+			return;
+		
 		MoveHorizontal = Input.GetAxis(_controlls[_playerIndex][Controll.Horizontal]);
 		MoveVertical = Input.GetAxis(_controlls[_playerIndex][Controll.Vertical]);
 
@@ -155,6 +158,11 @@ public class Player : MonoBehaviour
 			return;
 		
 		var movement = new Vector3 (MoveHorizontal, 0.0f, MoveVertical);
+		
+		if(_animator.gameObject.activeSelf){
+			_animator.SetBool("isRunning", movement != Vector3.zero);
+		}
+		
 
 		var rigid = GetComponent<Rigidbody>(); 
 		
@@ -262,4 +270,6 @@ public class Player : MonoBehaviour
 			PlayerIndex.Three, GamePad.Index.Three
 		},
 	};
+
+	[SerializeField] private Animator _animator;
 }

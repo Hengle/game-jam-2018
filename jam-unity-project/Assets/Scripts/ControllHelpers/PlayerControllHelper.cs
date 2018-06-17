@@ -11,7 +11,7 @@ namespace ControllHelpers
     [SerializeField] private GameObject RapaireButton;
 
     private void Start()
-    {
+    {      
       var player = GetComponentInChildren<Player>();
       player.OnRoomStateChange += PlayerOnRoomChange;
       
