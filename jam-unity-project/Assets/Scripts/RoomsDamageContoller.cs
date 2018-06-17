@@ -61,8 +61,6 @@ public class RoomsDamageContoller : MonoBehaviour
 
   private BaseRoom GetRandomRoom()
   {
-    GameGod.Instance.GameOver();
-    
     //SceneManager.LoadScene("ScoreScreen");
     var index = Random.Range(0, _rooms.Count);
     var room = _rooms[index];
@@ -92,6 +90,9 @@ public class RoomsDamageContoller : MonoBehaviour
   public void Update()
   {
     Sirena.loop = true;
+
+    if (GameGod.Instance._started)
+      return;
     
     var anyRoomIsDamaged = _rooms.Any(r => r.CurrentHealth == 0);
     if (anyRoomIsDamaged && !Sirena.isPlaying)

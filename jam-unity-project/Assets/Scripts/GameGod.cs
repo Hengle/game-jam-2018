@@ -53,6 +53,11 @@ public class GameGod : MonoBehaviour
 
   public void Update()
   {
+    if (Input.GetKeyDown(KeyCode.Escape))
+    {
+      SceneManager.LoadScene("PreIntro");
+    }
+    
     if (Energy > 5)
     {
       _canPlaySound = true;
