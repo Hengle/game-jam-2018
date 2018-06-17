@@ -83,7 +83,7 @@ Material:
     - _OcclusionStrength: 1
     - _Opacity: 1
     - _Parallax: 0.02
-    - _PowerRim: 2.71
+    - _PowerRim: 1.41
     - _ScaleNormal: 0.36
     - _Smoothness: 2
     - _SmoothnessTextureChannel: 0

@@ -2025,6 +2025,7 @@ GameObject:
   - component: {fileID: 33362550732648556}
   - component: {fileID: 135280969988021012}
   - component: {fileID: 23346860399272144}
+  - component: {fileID: 95550333080475558}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -9690,7 +9691,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 05dcf7531fe560542b15c1b91c4b2920, type: 2}
+  - {fileID: 2100000, guid: 02117a3f4a247b24484011c957a277aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17511,6 +17512,23 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bcf3bfd39f0485d4c9ea1984737ae9b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95550333080475558
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375535494662300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a029e0637e00d9b4288f4fa0a78916ee, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
