@@ -24,6 +24,7 @@ public class NavigationRoom : BaseRoom
       CurrentPlayer.CanControll = false;
       IsLocked = true;
       StartCoroutine(EnergyConsumption());
+      GameGod.Instance.RoomActivated(0);
     }
   }
   

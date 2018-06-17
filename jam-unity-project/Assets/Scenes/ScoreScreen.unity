@@ -278,11 +278,11 @@ RectTransform:
   - {fileID: 1565074901}
   - {fileID: 1425828058}
   m_Father: {fileID: 2051339853}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: 82}
+  m_AnchoredPosition: {x: 314, y: 82}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213890394
@@ -483,7 +483,6 @@ GameObject:
   - component: {fileID: 687519629}
   - component: {fileID: 687519633}
   - component: {fileID: 687519632}
-  - component: {fileID: 687519631}
   - component: {fileID: 687519630}
   m_Layer: 5
   m_Name: Entry (1)
@@ -529,23 +528,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &687519631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 687519628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a465eb3ecbc6af14290d26c0de946317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultColor: {r: 1, g: 1, b: 1, a: 1}
-  BlinkColor: {r: 0, g: 0, b: 0, a: 0}
-  SelectedBlinkColor: {r: 0, g: 0, b: 0, a: 0}
-  BlinkSpeed: 0.5
-  NormalSpeed: 0.5
-  IsBlinking: 0
 --- !u!114 &687519632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,13 +560,107 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1. TEAM 0001  -  0 PTS
+  m_Text: 2. TEAM 0001  -  0 PTS
 --- !u!222 &687519633
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687519628}
+--- !u!1 &919660552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 919660553}
+  - component: {fileID: 919660556}
+  - component: {fileID: 919660555}
+  - component: {fileID: 919660554}
+  m_Layer: 5
+  m_Name: Entry (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &919660553
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919660552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2051339853}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 693, y: -345}
+  m_SizeDelta: {x: 892, y: 44.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &919660554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919660552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 80
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &919660555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919660552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 801fe4cfe793a45498776f49724c6df5, type: 3}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 81
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: PRESS ANY BUTTON TO RESTART
+--- !u!222 &919660556
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919660552}
 --- !u!1 &981346730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,7 +1137,6 @@ GameObject:
   - component: {fileID: 1425828058}
   - component: {fileID: 1425828062}
   - component: {fileID: 1425828061}
-  - component: {fileID: 1425828060}
   - component: {fileID: 1425828059}
   m_Layer: 5
   m_Name: Entry (3)
@@ -1107,23 +1182,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &1425828060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1425828057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a465eb3ecbc6af14290d26c0de946317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultColor: {r: 1, g: 1, b: 1, a: 1}
-  BlinkColor: {r: 0, g: 0, b: 0, a: 0}
-  SelectedBlinkColor: {r: 0, g: 0, b: 0, a: 0}
-  BlinkSpeed: 0.5
-  NormalSpeed: 0.5
-  IsBlinking: 0
 --- !u!114 &1425828061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,7 +1214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1. Team 0003  -  0 PTS
+  m_Text: 4. TEAM 0003  -  0 PTS
 --- !u!222 &1425828062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1254,7 +1312,6 @@ GameObject:
   - component: {fileID: 1565074901}
   - component: {fileID: 1565074905}
   - component: {fileID: 1565074904}
-  - component: {fileID: 1565074903}
   - component: {fileID: 1565074902}
   m_Layer: 5
   m_Name: Entry (2)
@@ -1300,23 +1357,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &1565074903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1565074900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a465eb3ecbc6af14290d26c0de946317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultColor: {r: 1, g: 1, b: 1, a: 1}
-  BlinkColor: {r: 0, g: 0, b: 0, a: 0}
-  SelectedBlinkColor: {r: 0, g: 0, b: 0, a: 0}
-  BlinkSpeed: 0.5
-  NormalSpeed: 0.5
-  IsBlinking: 0
 --- !u!114 &1565074904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,7 +1389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1. TEAM 0002  -  0 PTS
+  m_Text: 3. TEAM 0002  -  0 PTS
 --- !u!222 &1565074905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1989,6 +2029,7 @@ RectTransform:
   - {fileID: 1818809299}
   - {fileID: 1372394151}
   - {fileID: 1814142870}
+  - {fileID: 919660553}
   - {fileID: 213890393}
   m_Father: {fileID: 0}
   m_RootOrder: 6

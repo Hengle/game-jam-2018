@@ -38,8 +38,9 @@ public class Done_DestroyByContact : MonoBehaviour
 			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 			//gameController.GameOver();
 		}
-		
-		//gameController.AddScore(scoreValue);
+
+	
+		GameGod.Instance.AddScore(scoreValue);
 		
 		if(other.gameObject.CompareTag("Player"))
 			CollisionDetector.Instance.HitOnPlayer();

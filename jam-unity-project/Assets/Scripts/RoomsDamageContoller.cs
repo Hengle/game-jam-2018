@@ -11,7 +11,7 @@ public class RoomsDamageContoller : MonoBehaviour
   public float FadeOutTime = 5f;
 
   private List<BaseRoom> _rooms = new List<BaseRoom>();
- 
+  
   private void Start()
   {
     var ammoRoom = FindObjectOfType<AmmunitionRoom>();
@@ -39,6 +39,7 @@ public class RoomsDamageContoller : MonoBehaviour
     if (GameGod.Instance.ShieldIsActivated)
     {
       GameGod.Instance.DeactivateShield();
+      PlaySound();
     }
     else
     {
@@ -50,6 +51,11 @@ public class RoomsDamageContoller : MonoBehaviour
         randomRoom.SufferBitch();
       }
     }
+  }
+
+  private void PlaySound()
+  {
+    GetComponent<AudioSource>().Play();
   }
 
   private BaseRoom GetRandomRoom()
