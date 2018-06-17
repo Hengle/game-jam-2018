@@ -22,10 +22,15 @@ public class ShootRoom : BaseRoom
       player.DropAmmo();
       return;
     }
+
+    var needToSeet = CurrentPlayer == null;
     
     CurrentPlayer = player;
     CurrentPlayer.CanControll = false;
     IsLocked = true;
+    
+    if(needToSeet)
+      return;
     
     if(GameGod.Instance.CurrentBullets > 0)
     {
