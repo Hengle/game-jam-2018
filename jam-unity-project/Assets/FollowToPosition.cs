@@ -7,7 +7,7 @@ public class FollowToPosition : MonoBehaviour
 	void LateUpdate ()
 	{
 		transform.position = new Vector3(_target.transform.position.x,
-			_target.transform.position.y + 2.5f,
-			_target.transform.position.z - 1.5f);
+			_target.transform.position.y + 5f,
+			_target.transform.position.z - 3f);
 	}
 }

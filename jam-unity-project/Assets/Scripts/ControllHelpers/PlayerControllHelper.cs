@@ -8,6 +8,7 @@ namespace ControllHelpers
     [SerializeField] private GameObject LeftStick;
     [SerializeField] private GameObject XButton;
     [SerializeField] private GameObject OButton;
+    [SerializeField] private GameObject RapaireButton;
 
     private void Start()
     {
@@ -22,9 +23,16 @@ namespace ControllHelpers
       LeftStick.SetActive(false);
       XButton.SetActive(false);
       OButton.SetActive(false);
+      RapaireButton.SetActive(false);
       
       if (room == null)
       {
+        return;
+      }
+
+      if (room.CurrentHealth < room.MaxHealth)
+      {
+        RapaireButton.SetActive(true);
         return;
       }
 
