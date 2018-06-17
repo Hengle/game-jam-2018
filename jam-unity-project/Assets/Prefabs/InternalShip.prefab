@@ -20050,6 +20050,8 @@ MonoBehaviour:
   - {fileID: 1355869870414570}
   - {fileID: 1352712567240408}
   - {fileID: 1519271236072506}
+  - {fileID: 1407883907877830}
+  - {fileID: 1818324027066152}
   CurrentHealth: 9
   MaxHealth: 9
   _damaged: {fileID: 1010951545815330}

@@ -179,6 +179,11 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &201667986 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1407883907877830, guid: 965df4132ce3c854a9396aad969460a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1362566522}
 --- !u!1001 &203321301
 Prefab:
   m_ObjectHideFlags: 0
@@ -221,6 +226,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8588a17d007f3bd40b507bd3875616c9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &219684393 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1818324027066152, guid: 965df4132ce3c854a9396aad969460a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1362566522}
 --- !u!1 &243739000 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1269926973981402, guid: 965df4132ce3c854a9396aad969460a8,
@@ -670,6 +680,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1615764970}
     m_Modifications:
+    - target: {fileID: 114036749248460354, guid: 965df4132ce3c854a9396aad969460a8,
+        type: 2}
+      propertyPath: Lights.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4797815083908770, guid: 965df4132ce3c854a9396aad969460a8, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -702,6 +717,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1087053143743788, guid: 965df4132ce3c854a9396aad969460a8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246140731146944, guid: 965df4132ce3c854a9396aad969460a8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114036749248460354, guid: 965df4132ce3c854a9396aad969460a8,
+        type: 2}
+      propertyPath: Lights.Array.data[4]
+      value: 
+      objectReference: {fileID: 201667986}
+    - target: {fileID: 114036749248460354, guid: 965df4132ce3c854a9396aad969460a8,
+        type: 2}
+      propertyPath: Lights.Array.data[5]
+      value: 
+      objectReference: {fileID: 219684393}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 965df4132ce3c854a9396aad969460a8, type: 2}
   m_IsPrefabParent: 0
