@@ -365,15 +365,24 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 224188600805635092, guid: c8eeb25ccdd651f45a7f831a6c46fc96,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.946
+      objectReference: {fileID: 0}
+    - target: {fileID: 224188600805635092, guid: c8eeb25ccdd651f45a7f831a6c46fc96,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1601.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114794820284802024, guid: c8eeb25ccdd651f45a7f831a6c46fc96,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Score:'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8eeb25ccdd651f45a7f831a6c46fc96, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &253209233 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114794820284802024, guid: c8eeb25ccdd651f45a7f831a6c46fc96,
-    type: 2}
-  m_PrefabInternal: {fileID: 253209230}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &269654024
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +441,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &365003598 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1892595354702042, guid: c8eeb25ccdd651f45a7f831a6c46fc96,
+    type: 2}
+  m_PrefabInternal: {fileID: 253209230}
+--- !u!114 &365003599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365003598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c4828ce55706643bb72eb4c18186cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &613134326 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4797815083908770, guid: 965df4132ce3c854a9396aad969460a8,
@@ -571,11 +596,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114710625852178448, guid: de7452e112c012e4cac54ff9a2efc4d4,
-        type: 2}
-      propertyPath: ScoreText
-      value: 
-      objectReference: {fileID: 253209233}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de7452e112c012e4cac54ff9a2efc4d4, type: 2}
   m_IsPrefabParent: 0

@@ -810,6 +810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RepaireKeyPower: 3
   RepaireKeyDecrement: 3
+  ISGAMEOVER: 0
   NavigationEnergyConsumption: 2
   NavigationEnergyTimeOut: 1
   EnergyIncrement: 10
@@ -830,6 +831,7 @@ MonoBehaviour:
   ScoreText: {fileID: 0}
   ShieldActivationEnergy: 20
   ShieldIsActivated: 0
+  _started: 0
   Magnitude: 2
   Roughness: 10
   FadeOutTime: 2

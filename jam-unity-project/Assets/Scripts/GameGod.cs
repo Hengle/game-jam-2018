@@ -47,8 +47,6 @@ public class GameGod : MonoBehaviour
 
   public int CurrentPoints = 0;
 
-  public Text ScoreText;
-
   private bool _canPlaySound;
 
   public void Update()
@@ -68,15 +66,13 @@ public class GameGod : MonoBehaviour
       _canPlaySound = false;
       EnergySound.Play();
     }
-
-    if (ScoreText != null)
-      ScoreText.text = "SCORE: " + CurrentPoints;
   }
 
   private void Awake()
   {
     CurrentPoints = 0;
     _instance = this;
+    _started = false;
     
     
     DontDestroyOnLoad(gameObject);

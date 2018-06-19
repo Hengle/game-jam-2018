@@ -86,14 +86,11 @@ public class RoomsDamageContoller : MonoBehaviour
   }
 
   public AudioSource Sirena;
-
+/*
   public void Update()
   {
     Sirena.loop = true;
 
-    if (GameGod.Instance._started)
-      return;
-    
     var anyRoomIsDamaged = _rooms.Any(r => r.CurrentHealth == 0);
     if (anyRoomIsDamaged && !Sirena.isPlaying)
     {
@@ -104,5 +101,5 @@ public class RoomsDamageContoller : MonoBehaviour
     {
       Sirena.Stop();
     }
-  }
+  }*/
 }
