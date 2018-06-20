@@ -70,7 +70,7 @@ public class MenuItemSelector : MonoBehaviour
             if (_changed)
             {
                 PlayMenuItemChangeSound();
-                _changed = false;
+                _changed = false;/*
                 if (_previousValue > 0)
                 {
                     _currentIndex += 1;
@@ -89,7 +89,7 @@ public class MenuItemSelector : MonoBehaviour
                         _currentIndex = 3;
                     }
                     UpdateState();
-                }
+                }*/
             }
         }
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 11400002}
-  - component: {fileID: 11400004}
+  - component: {fileID: 114139998572926092}
   m_Layer: 0
   m_Name: Done_Bolt-Enemy
   m_TagString: Enemy
@@ -131,21 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8846417901f4942d2a5fa9e32ce69d45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
-  playerExplosion: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
-    type: 2}
-  scoreValue: 0
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -170,3 +155,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
+--- !u!114 &114139998572926092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0082931b9d15408fb6ddcde8eb7ee347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 1
+  _score: 5
+  _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
+    type: 2}
+  _damageEffect: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
+  _affectedTags:
+  - Player

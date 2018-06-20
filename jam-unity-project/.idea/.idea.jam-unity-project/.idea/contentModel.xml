@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\o.rogovskyi\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_jam-unity-project.2061342054.00" t="ExcludeRecursive" />
-    <e p="D:\Projects\jam-master\game-jam-2018\jam-unity-project" t="IncludeRecursive">
+    <e p="C:\Repo\game-jam-2018\jam-unity-project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\Art" t="Include">
+        <e p="panner.shader" t="Include" />
+        <e p="Player" t="Include">
+          <e p="Player SpaceMan.shader" t="Include" />
+          <e p="Player.shader" t="Include" />
+        </e>
+      </e>
       <e p="Assets\Assets" t="Include">
+        <e p="Almgp_particle_vol_1" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="script" t="Include">
+            <e p="sprite_sheet.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="emmision_particle.shader" t="Include" />
+            <e p="face_power_particle.shader" t="Include" />
+            <e p="mesh_dissolve_particel.shader" t="Include" />
+            <e p="multypower_particle.shader" t="Include" />
+          </e>
+        </e>
         <e p="GalaxyBox2" t="Include">
           <e p="instructions.txt" t="Include" />
           <e p="Scripts" t="Include">
@@ -17,6 +35,7 @@
           <e p="Readme.txt" t="Include" />
         </e>
       </e>
+      <e p="Assets\BulletsUiProgressBar.cs" t="Include" />
       <e p="Assets\BulletsUITemp.cs" t="Include" />
       <e p="Assets\Cinemachine" t="Include">
         <e p="Base" t="Include">
@@ -147,11 +166,35 @@
           </e>
         </e>
       </e>
+      <e p="Assets\DESTROER.cs" t="Include" />
+      <e p="Assets\EZ Camera Shake" t="Include">
+        <e p="Demo" t="Include">
+          <e p="Sample Scripts" t="Include">
+            <e p="ShakeByDistance.cs" t="Include" />
+            <e p="ShakeOnKeyPress.cs" t="Include" />
+            <e p="ShakeOnTrigger.cs" t="Include" />
+          </e>
+          <e p="ShakeDemo.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CameraShakeInstance.cs" t="Include" />
+          <e p="CameraShakePresets.cs" t="Include" />
+          <e p="CameraShaker.cs" t="Include" />
+          <e p="Utilities" t="Include">
+            <e p="CameraUtilities.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Assets\FollowToPosition.cs" t="Include" />
       <e p="Assets\GamePadInput" t="Include">
         <e p="Demo" t="Include">
           <e p="DemoScript.cs" t="Include" />
         </e>
         <e p="GamePad.cs" t="Include" />
+      </e>
+      <e p="Assets\GETSCORE.cs" t="Include" />
+      <e p="Assets\Pixel Font - Tripfive" t="Include">
+        <e p="_README.txt" t="Include" />
       </e>
       <e p="Assets\PostProcessing" t="Include">
         <e p="Editor" t="Include">
@@ -316,7 +359,23 @@
         </e>
       </e>
       <e p="Assets\Scripts" t="Include">
+        <e p="ControllHelpers" t="Include">
+          <e p="ControllHelperKey.cs" t="Include" />
+          <e p="PlayerControllHelper.cs" t="Include" />
+        </e>
+        <e p="Destructible.cs" t="Include" />
+        <e p="Enemies" t="Include">
+          <e p="PointMover.cs" t="Include" />
+        </e>
         <e p="GameGod.cs" t="Include" />
+        <e p="Intro" t="Include">
+          <e p="AnyButtonPress.cs" t="Include" />
+          <e p="MenuItemSelector.cs" t="Include" />
+        </e>
+        <e p="Music" t="Include">
+          <e p="MusicCOntroller.cs" t="Include" />
+          <e p="VolumeController.cs" t="Include" />
+        </e>
         <e p="Player.cs" t="Include" />
         <e p="Rooms" t="Include">
           <e p="AmmunitionRoom.cs" t="Include" />
@@ -334,6 +393,10 @@
           <e p="UIUpdater.cs" t="Include" />
         </e>
         <e p="Spawner.cs" t="Include" />
+        <e p="UI" t="Include">
+          <e p="ScoreUpdater.cs" t="Include" />
+          <e p="SelectedMenuItem.cs" t="Include" />
+        </e>
       </e>
       <e p="Assets\Space Shooter Project" t="Include">
         <e p="_Complete-Game" t="Include">
@@ -350,23 +413,18 @@
             <e p="Done_WeaponController.cs" t="Include" />
           </e>
         </e>
-        <e p="TutorialInfo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ReadmeEditor.cs" t="Include" />
-            </e>
-            <e p="Readme.cs" t="Include" />
-          </e>
-        </e>
       </e>
+      <e p="Assets\UiEnergyProgressbar.cs" t="Include" />
       <e p="Assets\Vfx" t="Include">
         <e p="Shaders" t="Include">
+          <e p="AddPower.shader" t="Include" />
           <e p="CameraFilterPack_AAA_SuperHexagon.cs" t="Include" />
           <e p="CameraFilterPack_AAA_SuperHexagon.shader" t="Include" />
           <e p="CameraFilterPack_FX_Glitch2.cs" t="Include" />
           <e p="CameraFilterPack_FX_Glitch2.shader" t="Include" />
           <e p="CameraFilterPack_TV_ARCADE.cs" t="Include" />
           <e p="CameraFilterPack_TV_ARCADE.shader" t="Include" />
+          <e p="EmissionMain.shader" t="Include" />
           <e p="SheepMain.shader" t="Include" />
           <e p="Shield.shader" t="Include" />
         </e>
@@ -379,5 +437,6 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
+    <e p="C:\Users\mikha\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_jam-unity-project.894283522.00" t="ExcludeRecursive" />
   </component>
 </project>
