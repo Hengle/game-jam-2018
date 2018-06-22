@@ -12,33 +12,16 @@ public class Destructible : MonoBehaviour
   [SerializeField] private GameObject _destroyEffect;
   [SerializeField] private GameObject _damageEffect;
 
-  [SerializeField] private string[] _affectedTags; 
-
   private void Awake()
   {
     OnDestroy += OnDestroyIvoked;
   }
 
-  private void OnTriggerEnter (Collider other)
-  {
-    foreach (var t in _affectedTags)
-    {
-      if (other.CompareTag(t))
-      {
-        //    if(other.gameObject.CompareTag("Player"))
-//      CollisionDetector.Instance.HitOnPlayer();
-        #warning fixed Player hit
-
-        CollisionDetector.Instance.AnyHit();
-    
-        TakeDamage(1);
-      }
-    }
-  }
-
-  private void TakeDamage(int damage)
+  public void TakeDamage(int damage)
   {
     _health -= damage;
+    
+    Debug.Log(gameObject.name + " take " + damage);
     
     if (_damageEffect != null)
     {

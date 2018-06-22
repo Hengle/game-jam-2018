@@ -33,7 +33,7 @@ GameObject:
   - component: {fileID: 8200000}
   - component: {fileID: 114532565840605464}
   - component: {fileID: 114119795874862824}
-  - component: {fileID: 114000108625091910}
+  - component: {fileID: 114235224281961676}
   m_Layer: 0
   m_Name: Done_Enemy Ship
   m_TagString: Enemy
@@ -3721,24 +3721,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
---- !u!114 &114000108625091910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0082931b9d15408fb6ddcde8eb7ee347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: 1
-  _score: 15
-  _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
-    type: 2}
-  _damageEffect: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
-  _affectedTags:
-  - Player
 --- !u!114 &114119795874862824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3750,6 +3732,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ceb2936442f8be46afebedb2518618a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114235224281961676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042287792d38e3b43aa842609799efaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _takeDamange: 1
+  _receiveDamage: 1
+  _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
+    type: 2}
+  _damageEffect: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
+  _health: 1
+  _score: 15
+  _damage: 1
+  _affectedTags:
+  - Player
 --- !u!114 &114532565840605464
 MonoBehaviour:
   m_ObjectHideFlags: 1

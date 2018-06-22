@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 11400002}
-  - component: {fileID: 114685324842981836}
+  - component: {fileID: 114871945960956462}
   m_Layer: 0
   m_Name: Done_Bolt
   m_TagString: Player
@@ -155,7 +155,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!114 &114685324842981836
+--- !u!114 &114871945960956462
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -163,13 +163,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0082931b9d15408fb6ddcde8eb7ee347, type: 3}
+  m_Script: {fileID: 11500000, guid: 042287792d38e3b43aa842609799efaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 1
-  _score: 5
+  _takeDamange: 1
+  _receiveDamage: 1
   _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
     type: 2}
   _damageEffect: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
+  _health: 1
+  _score: 5
+  _damage: 1
   _affectedTags:
   - Enemy

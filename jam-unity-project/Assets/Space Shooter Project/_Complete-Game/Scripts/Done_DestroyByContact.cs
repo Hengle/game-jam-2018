@@ -29,8 +29,6 @@ public class Done_DestroyByContact : MonoBehaviour
 		
 		if(other.gameObject.CompareTag("Player"))
 			CollisionDetector.Instance.HitOnPlayer();
-
-		CollisionDetector.Instance.AnyHit();
 		
 		Destroy (gameObject);
 	}

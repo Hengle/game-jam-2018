@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 11400006}
   - component: {fileID: 114412638629655608}
-  - component: {fileID: 114873011668581056}
+  - component: {fileID: 114796616094196676}
   m_Layer: 0
   m_Name: Done_Asteroid 02
   m_TagString: Enemy
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ceb2936442f8be46afebedb2518618a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114873011668581056
+--- !u!114 &114796616094196676
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -192,13 +192,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0082931b9d15408fb6ddcde8eb7ee347, type: 3}
+  m_Script: {fileID: 11500000, guid: 042287792d38e3b43aa842609799efaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 1
-  _score: 5
+  _takeDamange: 1
+  _receiveDamage: 1
   _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
     type: 2}
   _damageEffect: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
+  _health: 1
+  _score: 5
+  _damage: 1
   _affectedTags:
   - Player

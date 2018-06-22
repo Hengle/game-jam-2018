@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 4076565852647806}
   - component: {fileID: 82493061126561412}
   - component: {fileID: 135572234006672082}
+  - component: {fileID: 114260780710561302}
   m_Layer: 0
   m_Name: Done_Player
   m_TagString: Player
@@ -697,6 +698,27 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114260780710561302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269261866735678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042287792d38e3b43aa842609799efaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _takeDamange: 1
+  _receiveDamage: 0
+  _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
+    type: 2}
+  _damageEffect: {fileID: 100002, guid: afc18fc39ade3744397c0c993b57be53, type: 2}
+  _health: 1
+  _score: 0
+  _damage: 1
+  _affectedTags:
+  - Enemy
 --- !u!135 &135572234006672082
 SphereCollider:
   m_ObjectHideFlags: 1

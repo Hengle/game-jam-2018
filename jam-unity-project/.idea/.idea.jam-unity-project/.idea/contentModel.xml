@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Repo\game-jam-2018\jam-unity-project" t="IncludeRecursive">
+    <e p="C:\Users\m.yefremov\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_jam-unity-project.1674871944.00" t="ExcludeRecursive" />
+    <e p="C:\Users\m.yefremov\Documents\game-jam-2018\jam-unity-project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets\Art" t="Include">
@@ -359,10 +360,12 @@
         </e>
       </e>
       <e p="Assets\Scripts" t="Include">
+        <e p="CollisionObject.cs" t="Include" />
         <e p="ControllHelpers" t="Include">
           <e p="ControllHelperKey.cs" t="Include" />
           <e p="PlayerControllHelper.cs" t="Include" />
         </e>
+        <e p="Damaging.cs" t="Include" />
         <e p="Destructible.cs" t="Include" />
         <e p="Enemies" t="Include">
           <e p="PointMover.cs" t="Include" />
@@ -377,6 +380,7 @@
           <e p="VolumeController.cs" t="Include" />
         </e>
         <e p="Player.cs" t="Include" />
+        <e p="ProjectConstants.cs" t="Include" />
         <e p="Rooms" t="Include">
           <e p="AmmunitionRoom.cs" t="Include" />
           <e p="BaseRoom.cs" t="Include" />
@@ -437,6 +441,5 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\mikha\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_jam-unity-project.894283522.00" t="ExcludeRecursive" />
   </component>
 </project>
