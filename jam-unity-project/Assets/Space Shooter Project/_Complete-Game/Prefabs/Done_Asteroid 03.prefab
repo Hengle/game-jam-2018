@@ -189,6 +189,7 @@ MonoBehaviour:
   _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
     type: 2}
   _damageEffect: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
+  _takeDamangeFxPlay: 1
   _health: 5
   _score: 25
   _damage: 3

@@ -42,7 +42,7 @@ public class RoomsDamageContoller : MonoBehaviour
       GameGod.Instance.DeactivateShield();
       PlaySound();
     }
-    else
+    else 
     {
       var randomRoom = GetRandomRoom();
 
