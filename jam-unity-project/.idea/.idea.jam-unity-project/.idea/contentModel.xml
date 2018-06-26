@@ -365,8 +365,6 @@
           <e p="ControllHelperKey.cs" t="Include" />
           <e p="PlayerControllHelper.cs" t="Include" />
         </e>
-        <e p="Damaging.cs" t="Include" />
-        <e p="Destructible.cs" t="Include" />
         <e p="Enemies" t="Include">
           <e p="PointMover.cs" t="Include" />
         </e>

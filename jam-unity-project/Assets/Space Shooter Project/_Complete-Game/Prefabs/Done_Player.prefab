@@ -709,12 +709,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042287792d38e3b43aa842609799efaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _takeDamange: 1
+  _takeDamage: 1
   _receiveDamage: 0
   _destroyEffect: {fileID: 1563250091130468, guid: b7ebac7d6a577344f9199c56b74af9f6,
     type: 2}
-  _damageEffect: {fileID: 100002, guid: afc18fc39ade3744397c0c993b57be53, type: 2}
-  _takeDamangeFxPlay: 1
+  _damageEffect: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
+  _takeDamageFxPlay: 1
   _health: 1
   _score: 0
   _damage: 1

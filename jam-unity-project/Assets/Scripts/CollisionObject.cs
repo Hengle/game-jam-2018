@@ -52,10 +52,7 @@ public class CollisionObject : MonoBehaviour
   }
 
   private void ReceiveDamage(int damage)
-  {
-    if(gameObject.CompareTag(ProjectConstants.PLAYER_TAG))
-      Console.Write("");
-    
+  {    
     if(_takeDamageFxPlay && _damageEffect != null)
       Instantiate(_damageEffect, transform.position, transform.rotation);
     
