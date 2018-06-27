@@ -12,7 +12,6 @@ public class CollisionDetector : MonoBehaviour
   
   public event Action PlayerSpaceHit = delegate { };
 
-  // Use this for initialization
   void Awake()
   {
     _instance = this;

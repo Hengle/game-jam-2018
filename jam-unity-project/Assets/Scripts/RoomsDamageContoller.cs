@@ -48,7 +48,6 @@ public class RoomsDamageContoller : MonoBehaviour
 
       if (randomRoom != null)
       {
-//        Debug.Log(randomRoom.GetType().FullName);
         randomRoom.SufferBitch();
       }
     }
@@ -61,11 +60,10 @@ public class RoomsDamageContoller : MonoBehaviour
 
   private BaseRoom GetRandomRoom()
   {
-    //SceneManager.LoadScene("ScoreScreen");
     var index = Random.Range(0, _rooms.Count);
     var room = _rooms[index];
 
-    var enyWorking = false; //AWOID CRASH
+    var enyWorking = false;
     foreach (var r in _rooms)
     {
       if (r.CurrentHealth > 0)

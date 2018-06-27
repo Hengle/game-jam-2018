@@ -378,6 +378,7 @@
           <e p="VolumeController.cs" t="Include" />
         </e>
         <e p="Player.cs" t="Include" />
+        <e p="PlayerCollisionObject.cs" t="Include" />
         <e p="ProjectConstants.cs" t="Include" />
         <e p="Rooms" t="Include">
           <e p="AmmunitionRoom.cs" t="Include" />

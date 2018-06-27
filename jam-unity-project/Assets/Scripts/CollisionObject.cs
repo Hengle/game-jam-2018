@@ -11,13 +11,13 @@ public class CollisionObject : MonoBehaviour
   
   [SerializeField] private bool _takeDamageFxPlay = true;
   
-  public event Action<CollisionObject> OnDestroy = d => { }; 
-
   [SerializeField] private int _health;
   [SerializeField] private int _score;
   
   [SerializeField] private int _damage;
   [SerializeField] private string[] _affectedTags;
+  
+  public event Action<CollisionObject> OnDestroy = d => { };
 
   private void Awake()
   {
@@ -38,9 +38,6 @@ public class CollisionObject : MonoBehaviour
     {
       if (!other.CompareTag(t)) 
         continue;
-      
-      if(other.gameObject.CompareTag(ProjectConstants.PLAYER_TAG))
-        CollisionDetector.Instance.HitOnPlayer();
         
       var destructible = other.GetComponent<CollisionObject>();
         
@@ -55,18 +52,26 @@ public class CollisionObject : MonoBehaviour
   {    
     if(_takeDamageFxPlay && _damageEffect != null)
       Instantiate(_damageEffect, transform.position, transform.rotation);
-    
+
     if(!_receiveDamage)
       return;
     
+    ReceiveDamageImpl(damage);
+  }
+
+  protected virtual void ReceiveDamageImpl(int damage)
+  {    
     _health -= damage;
     
-    Debug.Log(gameObject.name + " take " + damage);
-    
     if (_health <= 0)
-      OnDestroy(this);
+      OnDestroyCall();
   }
-  
+
+  protected void OnDestroyCall()
+  {
+    OnDestroy(this);
+  }
+
   private void OnDestroyIvoked(CollisionObject obj)
   {
     if (_destroyEffect != null)
