@@ -373,6 +373,11 @@
           <e p="AnyButtonPress.cs" t="Include" />
           <e p="MenuItemSelector.cs" t="Include" />
         </e>
+        <e p="LevelControll" t="Include">
+          <e p="LevelDataDto.cs" t="Include" />
+          <e p="LevelGenerator.cs" t="Include" />
+          <e p="LevelMaster.cs" t="Include" />
+        </e>
         <e p="Music" t="Include">
           <e p="MusicCOntroller.cs" t="Include" />
           <e p="VolumeController.cs" t="Include" />
